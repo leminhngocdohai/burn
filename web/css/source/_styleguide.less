@@ -60,7 +60,6 @@
         &:hover,
         &.style-guide__a--hover {
             .lib-css(color, @color-gray_light);
-            .lib-css(text-decoration, none);
         }
     }
 
@@ -94,16 +93,16 @@
     //navigation tab
     .navigation-tab,
     .product.data.items {
-        .lib-data-tabs(@_tab-control-font-family: @font-roboto-bold,
-            @_tab-control-font-size: @font-size13,
+        .lib-data-tabs(@_tab-control-font-family: @font-family__roboto,
+            @_tab-control-font-size: @size-13,
             @_tab-control-font-weight: @font-weight-700,
-            @_tab-control-line-height: @size-20px,
+            @_tab-control-line-height: @size-20,
             @_tab-control-background-color: @color-f9,
             @_tab-control-color-active: @color-2d
         );
 
         .item.content {
-            .lib-css(border, @size-1px solid @color-d1);
+            .lib-css(border, @size-1 solid @color-d1);
         }
         .item.title{
             margin:0 -1px 0 0;
@@ -133,6 +132,7 @@
                 .lib-css(text-transform, uppercase);
 
                 a {
+                    .lib-css(text-decoration, none);
                     .lib-css(font-family, @font-family__roboto);
                     .lib-css(font-weight, 700);
                     .lib-css(color, @color-white);
