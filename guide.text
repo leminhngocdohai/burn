@@ -47,7 +47,7 @@
 <p>&nbsp;</p>
 <p><input class="mage-error" type="text"></p>
 <div class="mage-error">Please enter a valid email address</div>
-<h2>Navigation</h2>
+<h2 class="h2--30">Navigation</h2>
 <div class="product data items" data-mage-init="{"mage/tabs": {"openedState": "active", "animate": {"duration": 100}, "active": 1, "disabledState": "disabled"}}">
 <div class="item title" data-role="collapsible"><a class="switch" href="#tab-cars" data-toggle="trigger">Details</a></div>
 <div id="tab-cars" class="item content" data-role="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</div>
