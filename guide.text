@@ -47,21 +47,15 @@
 <p>&nbsp;</p>
 <p><input class="mage-error" type="text"></p>
 <div class="mage-error">Please enter a valid email address</div>
-<h2 class="h2--30">Navigation</h2>
-<dl class="navigation-tab" data-sections="tabs">
-<dt class="item title active" data-section="title"><a class="switch" href="#product.info.description" data-toggle="switch">Details</a></dt>
-<dd class="item content active" data-section="content">
-<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-</dd>
-<dt class="item title" data-section="title"><a class="switch" href="#product_tags" data-toggle="switch">Tags</a></dt>
-<dd class="item content" data-section="content">
-<p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-</dd>
-<dt class="item title" data-section="title"><a class="switch" href="#product_reviews" data-toggle="switch">Reviews</a></dt>
-<dd class="item content" data-section="content">
-<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-</dd>
-</dl>
+<h2>Navigation</h2>
+<div class="product data items" data-mage-init="{"mage/tabs": {"openedState": "active", "animate": {"duration": 100}, "active": 1, "disabledState": "disabled"}}">
+<div class="item title" data-role="collapsible"><a class="switch" href="#tab-cars" data-toggle="trigger">Details</a></div>
+<div id="tab-cars" class="item content" data-role="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</div>
+<div class="item title" data-role="collapsible"><a class="switch" href="#tab-movies" data-toggle="trigger">Tags</a></div>
+<div id="tab-movies" class="item content" data-role="content">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
+<div class="item title" data-role="collapsible"><a class="switch" href="#tab-music" data-toggle="trigger">Reviews</a></div>
+<div id="tab-music" class="item content" data-role="content">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+</div>
 <div class="actions dropdown example-dropdown-1"><button class="action toggle" data-mage-init="{" data-toggle="dropdown" aria-haspopup="true"> button + dropdown </button>
 <ul class="dropdown">
 <li><span class="item">One</span></li>
