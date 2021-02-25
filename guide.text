@@ -1,0 +1,11 @@
+
+<h2>Navigation</h2>
+<div class="product data items" data-mage-init="{"mage/tabs": {"openedState": "active", "animate": {"duration": 100}, "active": 1, "disabledState": "disabled"}}">
+<div class="item title" data-role="collapsible"><a class="switch" href="#tab-cars" data-toggle="trigger">Details</a></div>
+<div id="tab-cars" class="item content" data-role="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</div>
+<div class="item title" data-role="collapsible"><a class="switch" href="#tab-movies" data-toggle="trigger">Tags</a></div>
+<div id="tab-movies" class="item content" data-role="content">It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</div>
+<div class="item title" data-role="collapsible"><a class="switch" href="#tab-music" data-toggle="trigger">Reviews</a></div>
+<div id="tab-music" class="item content" data-role="content">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+</div>
+
