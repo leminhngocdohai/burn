@@ -1,3 +1,26 @@
+//navigation tab
+.navigation-tab,
+.product.data.items {
+    .lib-data-tabs(@_tab-control-font-family: @font-roboto-bold,
+        @_tab-control-font-size: @font-size13,
+        @_tab-control-font-weight: @font-weight-700,
+        @_tab-control-line-height: @size-20px,
+        @_tab-control-background-color: @color-f9,
+        @_tab-control-color-active: @color-2d
+    );
+
+    .item.content {
+        .lib-css(border, @size-1px solid @color-d1);
+    }
+    .item.title{
+        margin:0 -1px 0 0;
+        .switch{
+            padding: 5px 25px 5px 25px;
+        }
+    }
+
+}
+
 & when (@media-common =true) {
     h1 {
         .lib-css(font-family, @font-family__lora);
@@ -45,8 +68,8 @@
         .lib-css(font-size, @size-13);
         .lib-css(line-height, @p-line-height);
         .lib-css(color, @color-black_dark);
-  
-       
+
+
     }
 
     a {
@@ -72,7 +95,7 @@
         .lib-css(font-size, @size-15);
         .lib-css(line-height, @p-line-height);
         .lib-css(text-align, center);
-        .lib-css(border, @size-1 solid  @message-success__border-color);       
+        .lib-css(border, @size-1 solid  @message-success__border-color);
     }
 
     .message-error {
@@ -113,6 +136,5 @@
         }
 
     }
-    
 }
 
