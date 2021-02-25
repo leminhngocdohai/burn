@@ -1,13 +1,36 @@
 <h2 class="h2--30">Buttons</h2>
-<p><button class="" type="button">Add to cart</button></p>
+<p><button class="action primary" type="button">Add to cart</button></p>
 <p><button class="standard-button" type="button">Standard</button></p>
-<div class="adjust-button"><button class="button-adjust" type="button">+ </button> <input class="input-adjust" type="number"> <button class="button-adjust" type="button">-</button></div>
+<div class="adjust-button"><button class="button-adjust" type="button">-</button> <input class="input-adjust" type="number" value="1"> <button class="button-adjust" type="button">+</button></div>
 <p><button class="standard-button-black" type="button">Standard</button></p>
 <h2 class="h2--30">Checkboxes &amp; Radio Buttons</h2>
-<p><input id="r1" name="r" type="radio"><label for="r1">Radio 1</label></p>
-<p><input id="r2" name="r" type="radio"><label for="r2">Radio 2</label></p>
-<p><input id="r3" name="" type="checkbox"><label for="r3">check 1</label></p>
-<p><input id="r4" name="" type="checkbox"><label for="r4">check 2</label></p>
+<div class="not-disable">
+<p><input id="r1" checked="checked" name="r" type="radio"><label for="r1">Ticked</label></p>
+<p><input id="r2" name="r" type="radio"><label for="r2">Not Ticked</label></p>
+</div>
+<p><input id="r3" checked="checked" disabled="disabled" name="r" type="radio"><label for="r3">Ticked, Disabled</label></p>
+<p><input id="r4" disabled="disabled" name="r" type="radio"><label for="r4">Disabled</label></p>
+<div class="not-disable">
+<p><input id="c1" checked="checked" name="" type="checkbox"><label for="c1">Selected</label></p>
+<p><input id="c2" name="" type="checkbox"><label for="c2">Not Selected</label></p>
+</div>
+<p><input id="c3" checked="checked" disabled="disabled" name="" type="checkbox"><label for="c3">Selected, Disable</label></p>
+<p><input id="c4" disabled="disabled" name="" type="checkbox"><label for="c4">Disable</label></p>
+<h2 class="h2--30">Input Fields</h2>
+<div class="control">
+<p><label for="fname"></label> <input id="fname" name="fname" type="text" value="Text Fields "></p>
+<select id="select" name="select">
+<option value="">Dropdown field</option>
+<option value="5">5</option>
+<option value="10">10</option>
+<option value="15">15</option>
+<option value="20">20</option>
+</select></div>
+<p>&nbsp;</p>
+<p><input id="fname" class="message-success" name="fname" type="text" value="Text Fields Selected"></p>
+<p>&nbsp;</p>
+<p><input class="message-error" type="text" value="email@liv.com"></p>
+<div class="mage-error">Please enter a valid email address</div>
 <h2 class="h2--30">Alerts</h2>
 <p>&nbsp;</p>
 <div class="message message-success success">
@@ -32,22 +55,8 @@
 <div class="col-content">{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="20"}}</div>
 </div>
 </div>
-<h2 class="h2--30">Input Fields</h2>
-<p><label for="fname"></label> <input id="fname" name="fname" type="text"></p>
-<div class="control"><select id="select" name="select">
-<option value="">Dropdown field</option>
-<option value="5">5</option>
-<option value="10">10</option>
-<option value="15">15</option>
-<option value="20">20</option>
-</select></div>
-<p>&nbsp;</p>
-<p><input class="mage-error" type="text"></p>
-<div class="mage-error">Please enter a valid email address</div>
+
 <h2 class="h2--30">Navigation</h2>
-
-
-<h2>Navigation</h2>
 <div class="product data items" data-mage-init="{"mage/tabs": {"openedState": "active", "animate": {"duration": 100}, "active": 1, "disabledState": "disabled"}}">
 <div class="item title" data-role="collapsible"><a class="switch" href="#tab-cars" data-toggle="trigger">Details</a></div>
 <div id="tab-cars" class="item content" data-role="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</div>
@@ -56,10 +65,4 @@
 <div class="item title" data-role="collapsible"><a class="switch" href="#tab-music" data-toggle="trigger">Reviews</a></div>
 <div id="tab-music" class="item content" data-role="content">It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
 </div>
-<div class="actions dropdown example-dropdown-1"><button class="action toggle" data-mage-init="{" data-toggle="dropdown" aria-haspopup="true"> button + dropdown </button>
-<ul class="dropdown">
-<li><span class="item">One</span></li>
-<li><span class="item">Two</span></li>
-<li><span class="item">Three</span></li>
-</ul>
-</div>
+
