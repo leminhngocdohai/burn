@@ -91,15 +91,28 @@
             .lib-css(color,@color-black);
         }
     }
+    //navigation tab
+    .navigation-tab,
+    .product.data.items {
+        .lib-data-tabs(@_tab-control-font-family: @font-roboto-bold,
+            @_tab-control-font-size: @font-size13,
+            @_tab-control-font-weight: @font-weight-700,
+            @_tab-control-line-height: @size-20px,
+            @_tab-control-background-color: @color-f9,
+            @_tab-control-color-active: @color-2d
+        );
 
-    .styleguide-text{
-        .lib-css(font-family, @font-family__roboto);
-        .lib-css(font-weight, 700);
-        .lib-css(font-size, @size-15);
-        .lib-css(color, @color-white);
-        .lib-css(font-weight, @p-line-height);
-        .lib-css(background, @color-black-3b3);
-        .lib-css(border, 2px solid @color-white);
+        .item.content {
+            .lib-css(border, @size-1px solid @color-d1);
+        }
+        .item.title{
+            margin:0 -1px 0 0;
+            .switch{
+                padding: 5px 25px 5px 25px;
+            }
+        }
+
     }
     
 }
+
