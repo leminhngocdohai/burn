@@ -26,14 +26,11 @@
 <h2>h2 Lora Regular - 24px</h2>
 <h3>h3 Lora Regular - 18px</h3>
 <h4>h4 Roboto Bold - 15px</h4>
-<h2 class="h2--30">Misc</h2>
-<div>{{customVar code=times}}{{customVar code=facebook}}{{customVar code=instagram}}{{customVar code=twitter}}</div>
-<div>&nbsp;</div>
+<h2>Misc</h2>
 <div class="row">
-<div class="col">{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="23"}}</div>
-<div class="col-content">{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="24"}}</div>
-<div class="col">{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="23"}}</div>
-<div class="col-content">{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="24"}}</div>
+<div class="col">{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="19"}}
+<div class="col-content">{{widget type="Magento\Cms\Block\Widget\Block" template="widget/static_block/default.phtml" block_id="20"}}</div>
+</div>
 </div>
 <h2 class="h2--30">Input Fields</h2>
 <p><label for="fname"></label> <input id="fname" name="fname" type="text"></p>
