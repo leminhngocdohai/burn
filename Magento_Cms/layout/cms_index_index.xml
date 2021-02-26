@@ -10,5 +10,8 @@
         <referenceContainer name="main.content">
             <block class="Magento\Framework\View\Element\Template" name="styleguide" as="styleguide" after="icon" template="Magento_Cms::styleguide.phtml" />
         </referenceContainer>
+        <referenceContainer name="page.top">
+            <block class="Magento\Framework\View\Element\Template" name="home-banner" before="-" template="Magento_Cms::home-banner.phtml" />
+        </referenceContainer>
     </body>
 </page>
