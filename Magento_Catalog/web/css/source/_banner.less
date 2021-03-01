@@ -1,0 +1,70 @@
+& when (@media-common =true) {
+    .category_banner {
+        .lib-css(position, relative);
+        &_image {
+            .lib-css( max-width, 100%);
+            .lib-css(width, auto);  
+            img {
+                .lib-css(min-height, @size-120);
+            }
+            .lib-css(min-height, @size-120);         
+        }
+
+        &_text {
+            .lib-css(position, absolute);
+            
+           
+            h1 {
+                .lib-css(font-family, @font-family__sunvalley);
+                .lib-css(color, @color-white);                                          
+            }
+
+            h4 {
+                .lib-css(width, 60%);
+                .lib-css(color, @color-white);  
+                .lib-css(line-height, @h4-line-height)
+            }
+
+        }
+
+    }
+    
+}
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .category_banner {
+        &_text {
+            .lib-css(left, @size-41);
+            .lib-css(bottom, @size-23);
+            h1 {
+                .lib-css(font-size, @size-72); 
+            }
+
+        }
+    }
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xs) {
+    .category_banner {
+        &_text {
+            .lib-css(left, @size-15);
+            .lib-css(bottom, @size-8);
+            h1 {
+                .lib-css(font-size, @size-20); 
+                // top: 45%;
+                // left: 50%;
+                // transform: translate(-50%, -50%);
+                // width: 100%;
+                // text-align: center;
+            }
+
+            h4 {
+                .lib-css(display, none);
+            }
+        }
+    }
+ }
+
+
+
+
+
