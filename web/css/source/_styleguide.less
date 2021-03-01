@@ -1,0 +1,410 @@
+& when (@media-common =true) {
+    button, button.action.primary{
+        .lib-css(border-radius, 0);
+        .lib-css(max-width, @size-200);
+        .lib-css(text-transform, uppercase);
+        .lib-button(
+            @_button-font-size: @font-size-13,
+            @_button-line-height:@line-height-20,
+            @_button-color-hover: @color-white,
+            @_button-color-active: @color-white,
+            @_button-color: @color-white,
+            @_button-background:@color-green-default,
+            @_button-border: @boder-size-1 solid @color-green-default,
+            @_button-background-hover: @color-green-standard,
+            @_button-background-active: @color-green-standard,
+            @_button-width: @size-180
+        );
+
+        //standard button
+        &.standard-button {
+            .lib-css(width, @size-140);
+            .lib-button(
+                @_button-font-size: @font-size-13,
+                @_button-line-height:@line-height-20,
+                @_button-color: @color-black,
+                @_button-background:@color-white,
+                @_button-color-hover: @color-white,
+                @_button-color-active: @color-white,
+                @_button-border: @boder-size-2 solid @color-grey-default,
+                @_button-background-hover: @color-grey-default,
+                @_button-background-active: @color-grey-default,
+                @_button-border-hover: @boder-size-2 solid @color-grey-default,
+                @_button-border-active: @boder-size-2 solid @color-grey-default
+            );
+
+        }
+
+        &.standard-button-black {
+            .lib-css(width, @size-140);
+            .lib-button(
+                @_button-margin:10px 0px 0px 0px,
+                @_button-font-size: @font-size-13,
+                @_button-line-height:@line-height-20,
+                @_button-color: @color-white,
+                @_button-background:@color-grey-default,
+                @_button-color-hover: @color-black,
+                @_button-color-active: @color-black,
+                @_button-border: @boder-size-2 solid @color-grey-default,
+                @_button-background-hover: @color-white,
+                @_button-background-active: @color-white,
+                @_button-border-hover: @boder-size-2 solid @color-grey-default,
+                @_button-border-active: @boder-size-2 solid @color-grey-default
+
+            );
+        }
+
+        //adjust-button
+        &.button-adjust {
+            .lib-css(max-width, @size-40);
+            .lib-button(
+                @_button-line-height:@line-height-20,
+                @_button-background: @color-white,
+                @_button-color: @color-white-a9,
+                @_button-color-hover: @color-white-a9,
+                @_button-color-active: @color-white-a9,
+                @_button-background-active: @color-white-active,
+                @_button-background-hover: @color-white-active
+
+            );
+
+        }
+
+    }
+
+    input,
+    select,
+    textarea {
+        .lib-css(max-width, @size-200);
+        .lib-form-element-color(@_background: @color-white,
+            @_border-color: @color-ddd,
+            @_color: @color-black,
+            @_focus-color: @color-black,
+            @_focus-border-color: @color-ddd);
+    }
+
+    input {
+        &.input-adjust {
+            .lib-css(margin, 0px -5px);
+            .lib-css(padding-bottom, 3px);
+            .lib-css(max-width, @size-40);
+            .lib-css(max-height, @size-40);
+            .lib-css(height, @size-36);
+            .lib-css(text-align, center);
+            .lib-css(color, @color-333);
+        }
+    }
+
+    input {
+        background-color: #f4f4f4;
+        &:not([disabled]):focus {
+            .lib-css(box-shadow, none);
+        }
+
+        // input checkbox
+        &[type="checkbox"] {
+            .lib-css(visibility, hidden);
+
+            &:checked + label:after {
+                .lib-css(content, " ");
+                .lib-css(width, 5px);
+                .lib-css(height, 8px);
+                .lib-css(border-width, 0 2px 2px 0);
+                .lib-css(border-style, solid);
+                .lib-css(border-color, @color-black);
+                .lib-css(transform, rotate(45deg));
+                .lib-css(position, absolute);
+                .lib-css(left, 0);
+                .lib-css(top, 0);
+                .lib-css(margin, 4px 4px 4px 8px);
+            }
+
+            & + label:before {
+                .lib-css(opacity, 0.4);
+                .lib-css(border, @boder-size-1 solid @color-ddd);
+                .lib-css(content, " ");
+                .lib-css(display, inline-block);
+                .lib-css(margin, 0 10px -6px 0);
+                .lib-css(padding, 0);
+                .lib-css(vertical-align, top);
+                .lib-css(width, @size-20);
+                .lib-css(height, @size-20);
+            }
+        }
+
+        //input radio
+        &[type="radio"] {
+            .lib-css(visibility, hidden);
+
+            &:checked + label:after {
+                .lib-css(background, @color-333);
+                .lib-css(color, @color-white);
+                .lib-css(content, " ");
+                .lib-css(text-align, center);
+                .lib-css(width, 8px);
+                .lib-css(height, 8px);
+                .lib-css(position, absolute);
+                .lib-css(left, 0);
+                .lib-css(margin, 7px);
+                .lib-css(border-radius, 50%);
+            }
+
+            & + label:before {
+                .lib-css(opacity, 0.4);
+                .lib-css(border-radius, 50%);
+                .lib-css(vertical-align, baseline);
+                .lib-css(border, @boder-size-1 solid @color-ddd);
+                .lib-css(content, " ");
+                .lib-css(display, inline-block);
+                .lib-css(margin, 0 10px -6px 0);
+                .lib-css(padding, 0);
+                .lib-css(vertical-align, top);
+                .lib-css(width, @size-20);
+                .lib-css(height, @size-20);
+            }
+        }
+    }
+
+    label {
+        .lib-css(cursor, pointer);
+        .lib-css(position, relative);
+    }
+
+    .not-disable {
+        & input {
+            // input checkbox
+            &[type="checkbox"] {
+                .lib-css(visibility, hidden);
+
+                &:checked + label:before {
+                    .lib-css(opacity, 1);
+                    .lib-css(background, @color-white);
+                    .lib-css(color, @color-black);
+                    .lib-css(content, " ");
+                    .lib-css(text-align, center);
+                    .lib-css(font-size, @font-size-15);
+                    .lib-css(border, @boder-size-1 solid @color-ddd);
+                }
+
+                & + label:before {
+                    .lib-css(opacity, 1);
+                }
+
+            }
+
+            //input radio
+            &[type="radio"] {
+                .lib-css(visibility, hidden);
+
+                &:checked + label:before {
+                    .lib-css(opacity, 1);
+                    .lib-css(background, @color-white);
+                    .lib-css(color, @color-black);
+                    .lib-css(content, " ");
+                    .lib-css(text-align, center);
+                    .lib-css(font-size, @font-size-15);
+                    .lib-css(border, @boder-size-1 solid @color-ddd);
+                    .lib-css(border-radius, 50%);
+                }
+
+                & + label:before {
+                    .lib-css(opacity, 1);
+                }
+            }
+        }
+    }
+    input{
+        .lib-css(max-witdh, 230px);
+    }
+    input[type=text], select {
+
+        .lib-css(font-size, 13px);
+        .lib-css(line-height, 30px);
+        .lib-css(color, @color-333);
+        .lib-css(text-align, left);
+        .lib-css(padding, 0px 13px);
+        .lib-css(max-width, @size-230);
+
+        &:not([disabled]):focus,
+        &:focus {
+            .lib-css(box-shadow, none);
+        }
+
+        &.message-success {
+            .lib-css(background, @color-white);
+            .lib-css(box-shadow, 0px 0px 2px 0px);
+            .lib-css(border,@boder-size-1 solid @color-succsess);
+            .lib-css(color, @color-333);
+        }
+
+        &.message-error {
+            .lib-css(box-shadow, 0px 0px 2px 0px);
+            .lib-css(background, @color-white);
+            .lib-css(border, solid 1px @color-red);
+            .lib-css(color, @color-333)
+        }
+
+    }
+
+
+    textarea.message-error {
+        .lib-css(border-color, @color-red);
+    }
+
+    div.mage-error {
+        .lib-css(color, @color-red);
+    }
+
+    h1 {
+        .lib-css(font-family, @font-family__lora);
+        .lib-css(font-weight, 400);
+        .lib-css(font-size, @size-32);
+        .lib-css(line-height, @h-line-height);
+        .lib-css(color, @color-black-222);
+    }
+
+    h2 {
+        .lib-css(font-family, @font-family__lora);
+        .lib-css(font-weight, 400);
+        .lib-css(font-size, @size-24);
+        .lib-css(line-height, @h-line-height);
+        .lib-css(color, @color-black-222);
+        &.h2--30 {
+            .lib-css(font-family, 'Helvetica');
+            .lib-css(font-weight, 300);
+            .lib-css(font-size, @size-30);
+            .lib-css(line-height, @h2--30-line-hight);
+            .lib-css(color, @color-gray_light);
+
+        }
+    }
+
+    h3 {
+        .lib-css(font-family, @font-family__lora);
+        .lib-css(font-weight, 400);
+        .lib-css(font-size, @size-18);
+        .lib-css(line-height, @h-line-height);
+        .lib-css(color, @color-black-222);
+    }
+
+    h4 {
+        .lib-css(font-family, @font-family__roboto);
+        .lib-css(font-weight, 400);
+        .lib-css(font-size, @size-15);
+        .lib-css(line-height, @h-line-height);
+        .lib-css(color, @color-black-222);
+    }
+
+    p {
+        .lib-css(font-family, @font-family__roboto);
+        .lib-css(font-weight, 400);
+        .lib-css(font-size, @size-13);
+        .lib-css(line-height, @p-line-height);
+        .lib-css(color, @color-black_dark);
+
+
+    }
+
+    a {
+        .lib-css(font-family, @font-family__roboto);
+        .lib-css(font-weight, 400);
+        .lib-css(font-size, @size-13);
+        .lib-css(line-height, @p-line-height);
+        .lib-css(color, @color-black_dark);
+        .lib-css(text-decoration, none);
+        .lib-css(cursor, pointer);
+        &:hover,
+        &.style-guide__a--hover {
+            .lib-css(color, @color-gray_light);
+        }
+    }
+
+    //alert
+    .message-success {
+        .lib-message(success);
+        .lib-css(font-family, @font-family__roboto);
+        .lib-css(font-weight, 500);
+        .lib-css(font-size, @size-15);
+        .lib-css(line-height, @p-line-height);
+        .lib-css(text-align, center);
+        .lib-css(border, @size-1 solid  @message-success__border-color);
+    }
+
+    .message-error {
+        .lib-message(error);
+        .lib-css(font-family, @font-family__roboto);
+        .lib-css(font-weight, 500);
+        .lib-css(font-size, @size-15);
+        .lib-css(line-height, @p-line-height);
+        .lib-css(text-align, center);
+        .lib-css(border, @size-1 solid  @message-error__color);
+    }
+
+    .icon {
+        .lib-css(color, @color-icon);
+        &:hover {
+            .lib-css(color,@color-black);
+        }
+    }
+    //navigation tab
+    .navigation-tab,
+    .product.data.items {
+        .lib-data-tabs(@_tab-control-font-family: @font-family__roboto,
+            @_tab-control-font-size: @size-13,
+            @_tab-control-font-weight: @font-weight-700,
+            @_tab-control-line-height: @size-20,
+            @_tab-control-background-color: @color-f9,
+            @_tab-control-color-active: @color-2d
+        );
+
+        .item.content {
+            .lib-css(border, @size-1 solid @color-d1);
+        }
+        .item.title{
+            margin:0 -1px 0 0;
+            .switch{
+                padding: 5px 25px 5px 25px;
+            }
+        }
+
+    }
+
+    //cms block
+    .row {
+        .lib-css(margin, 0 -10px);
+        .lib-css(display, flex);
+
+        .col {
+            .lib-css(margin, 10px);
+            .lib-css(position, relative);
+
+            .col-content {
+                .lib-css(text-align, center);
+                .lib-css(position, absolute);
+                .lib-css(top, 50%);
+                .lib-css(left, 50%);
+                .lib-css(width, 100%);
+                .lib-css(transform, translate(-50%, -50%));
+                .lib-css(text-transform, uppercase);
+
+                a {
+                    .lib-css(text-decoration, none);
+                    .lib-css(font-family, @font-family__roboto);
+                    .lib-css(font-weight, 700);
+                    .lib-css(color, @color-white);
+                    .lib-css(background, @color-grey-default);
+                    .lib-css(border, @size-2 solid  @color-white);
+                    .lib-css(padding, @size-15);
+                }
+
+                a:hover {
+                    .lib-css(background, #262628);
+
+                }
+            }
+        }
+    }
+
+
+}
+
