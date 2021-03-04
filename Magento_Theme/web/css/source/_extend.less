@@ -1,17 +1,53 @@
 & when (@media-common =true) {
-    .page-header >.panel.wrapper {
+    .page-header {
+        .panel.wrapper{
+            background-color: #222223;
+            .panel.header {
+                display: flex;
+                position: relative;
+                padding:10px 0 20px 0;
+                p{
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #ffffff;
+                    font-weight: 500;
+                    font-family: "Roboto";
+                }
 
-        background-color: #222223;
+                a{
+                    font-size: 14px;
+                    line-height: 20px;
+                    color: #ffffff;
+                    font-weight: 700;
+                    font-family: "Roboto";
+                }
+                .header-top-desktop-left{
+                    position: absolute;
 
-        .header-contact{
-            display: flex;
-        }
-        .header-links{
-            display: flex;
 
-        }
-        .header-showrooms{
-            display:flex;
+                }
+                .header-top-desktop-center{
+                    position: absolute;
+                    left: 30%;
+                    > ul{
+                        display:flex;
+                    }
+
+                }
+                .header-top-desktop-right{
+                    position: absolute;
+                    display:flex;
+                    right: 0;
+                }
+                .header-top-mobile-left{
+                    display: none;
+                }
+                .header-top-mobile-right{
+                    display: none;
+                }
+
+            }
         }
     }
+
 }

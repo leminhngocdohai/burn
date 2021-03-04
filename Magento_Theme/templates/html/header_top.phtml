@@ -1,26 +1,35 @@
-<div class="container">
-    <div class="row">
-        <div class="header-contact">
-            <a href="<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('link-contact-us')->toHtml(); ?>"><?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('contact-top')->toHtml(); ?></a>
-            <span>/</span>
-            <a href="<?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('phone-link')->toHtml(); ?>"><?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('phone-number')->toHtml(); ?></a>
-        </div>
-        <div class="header-showrooms">
-            <a class="desktop" href=""><?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('outdoor-furniture')->toHtml(); ?></a>
-            <a class="mobile" href=""><?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('canberra')->toHtml(); ?></a>
-            <ul>
-                <li><a href=""><?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('fireplaces')->toHtml(); ?></a></li>
-                <li><a href=""><?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('weber')->toHtml(); ?></a></li>
-                <li><a href=""><?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('canberra')->toHtml(); ?></a></li>
-            </ul>
-        </div>
-        <div class="header-links">
-            <a class="about_us_link">About Us</a>
-            <a class="blog_link">Blog</a>
-            <a class="fb_link"><i class="fab fa-facebook-f"></i></a>
-            <a class="insta_link"><i class="fab fa-instagram"></i></a>
-            <a class="login">Login</a>
-        </div>
-    </div>
+<div class="header-top-desktop-left">
+    <?php echo
+        $block->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('header-top-left-contact-phone')
+            ->toHtml(); ?>
 </div>
-
+<div class="header-top-desktop-center">
+    <?php echo
+    $block->getLayout()
+        ->createBlock('Magento\Cms\Block\Block')
+        ->setBlockId('header-top-center-link')
+        ->toHtml(); ?>
+</div>
+<div class="header-top-desktop-right">
+    <?php echo
+    $block->getLayout()
+        ->createBlock('Magento\Cms\Block\Block')
+        ->setBlockId('header-top-right-infor')
+        ->toHtml(); ?>
+</div>
+<div class="header-top-mobile-left">
+    <?php echo
+    $block->getLayout()
+        ->createBlock('Magento\Cms\Block\Block')
+        ->setBlockId('header-top-left-mobile-address')
+        ->toHtml(); ?>
+</div>
+<div class="header-top-mobile-right">
+    <?php echo
+    $block->getLayout()
+        ->createBlock('Magento\Cms\Block\Block')
+        ->setBlockId('header-top-right-mobile-phone-contact')
+        ->toHtml(); ?>
+</div>
