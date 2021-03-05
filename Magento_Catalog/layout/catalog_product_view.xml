@@ -8,21 +8,23 @@
 <page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
         <move element="page.main.title" destination="product.info.main" before="product.info.price"/>
-        <!-- <move element="product.info.details" destination="product.info.media" after="product.info.media.image"/> -->
         <move element="catalog.product.related" destination="main.content" after="-"/>
+        <move element="product.info.review" destination="product.info.main" after="-"/>
         
         <!-- <move element="product.info.upsell" destination="product.info.media" after="product.info.details"/> -->
-        
 
-
-        
-
-        <referenceBlock name="product.info.options.wrapper">
-            <block class="Magento\Framework\View\Element\Template" name="catalog.wrapper" template="Magento_Catalog::Magento_Catalog::product/view/options/wrapper.phtml" />
-        </referenceBlock>
-        <referenceBlock name="product.info.options.wrapper.bottom">
-            <block class="Magento\Framework\View\Element\Template" name="catalog.wrapper.bottom" template="Magento_Catalog::Magento_Catalog::product/view/options/wrapper/bottom.phtml" />
-        </referenceBlock>
+        <block class="Magento\Catalog\Block\Product\ProductList\Related" name="catalog.product.related" template="Magento_Catalog::product/list/items.phtml">
+            <arguments>
+                <argument name="type" xsi:type="string">related</argument>
+                <argument name="view_model" xsi:type="object">Magento\Catalog\ViewModel\Product\Listing\PreparePostData</argument>
+            </arguments>
+            <block class="Magento\Catalog\Block\Product\ProductList\Item\Container" name="related.product.addto" as="addto">
+                <block class="Magento\Catalog\Block\Product\ProductList\Item\AddTo\Compare"
+                        name="related.product.addto.compare" as="compare"
+                        template="Magento_Catalog::product/list/addto/compare.phtml"/>
+            </block>
+        </block>
+    
 
         <referenceContainer name="main.content"> 
             <block class="Magento\Framework\View\Element\Template" name="name.readmore" after="product.info.details" template="Magento_Catalog::readmore.phtml" />

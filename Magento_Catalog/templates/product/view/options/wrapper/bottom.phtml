@@ -7,40 +7,66 @@
                 <button class="button-adjust" type="button">+</button>
             </div>
             <div>
-                <p><button class="action primary" type="button">Add to cart</button></p>
+                <p><button class="action primary" id="add-to-cart" type="button">Add to cart</button></p>
             </div>
         </div>
     </div>
 </div>
-<div class="product-details">
-    <div id="accordion" data-mage-init='{
-            "accordion":{
-                "active": [0],
-                "collapsible": true,
-                "openedState": "active",
-                "multipleCollapsible": false
-            }}'>
-        <div data-role="collapsible">
-            <div data-role="trigger">
-                <h4>Title 1</h4>
-            </div>
-        </div>
-        <div data-role="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
 
-        <div data-role="collapsible">
-            <div data-role="trigger">
-                <h4>Title 2</h4>
-            </div>
-        </div>
-        <div data-role="content"> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+<div id="modal-add-to-cart">
+    <div class="modal-body-content">
 
-        <div data-role="collapsible">
-            <div data-role="trigger">
-                <h4>Title 3</h4>
-            </div>
+        <div class="img">
+            <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('popup_main_image')->toHtml(); ?>
         </div>
-        <div data-role="content">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</div>
+        
+        <div class="content">
+            <p><strong>Amalfi 6 Seater Aluminium Outdoor Modular Lounge Setting</strong></p>
+            <p>was added to your cart</p>
+            <p><button class="action primary" id="add-to-cart" type="button">view cart and checkout</button></p>
+            <p><button class="standard-button" type="button">continue shopping</button></p>
+        </div>
+        
+        <div class="title"><h3>we also recommened</h3></div>
+
+        <div class="related">
+            <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('popup_main_image')->toHtml(); ?>
+            <p class="title"><h4>outdoor cover</h4></p>
+            <p class="price">$89.00</p>
+            <p><button class="standard-button" type="button">add to cart</button></p>
+        </div>
+        <div class="related">
+            <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('popup_main_image')->toHtml(); ?>
+            <p class="title"><h4>outdoor cover</h4></p>
+            <p class="price">$89.00</p>
+            <p><button class="standard-button" type="button">add to cart</button></p>
+        </div>
+        <div class="related">
+            <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('popup_main_image')->toHtml(); ?>
+            <p class="title"><h4>outdoor cover</h4></p>
+            <p class="price">$89.00</p>
+            <p><button class="standard-button" type="button">add to cart</button></p>
+        </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    require([
+        "jquery",
+        "Magento_Ui/js/modal/modal"
+    ],function($, modal) {
+
+        var options = {
+            type: 'popup',
+            responsive: true,
+            buttons: false
+        };
+
+        var popup = modal(options, $('#modal-add-to-cart'));
+        $("#add-to-cart").click(function() {
+            $('#modal-add-to-cart').modal('openModal');
+        });
+    });
+</script>
 
 
