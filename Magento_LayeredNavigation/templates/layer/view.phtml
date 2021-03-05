@@ -28,10 +28,10 @@
         }
     }'>
         <?php $filtered = count($block->getLayer()->getState()->getFilters()) ?>
-        <div class="block-title filter-title" data-count="<?= /* @noEscape */ $filtered ?>">
+        <div class="block-title filter-title" data-count="<?= /* @noEscape */ $filtered ?>" >
             <strong data-role="title"><?= $block->escapeHtml(__('Filter By')); ?></strong>
         </div>
-        <div class="block-content filter-content">
+        <div class="block-content filter-content" >
             <?= $block->getChildHtml('state') ?>
 
             <?php if ($block->getLayer()->getState()->getFilters()) : ?>
@@ -45,7 +45,7 @@
             <?php foreach ($block->getFilters() as $filter) : ?>
                 <?php if ($filter->getItemsCount()) : ?>
                     <?php if (!$wrapOptions) : ?>
-                        <strong role="heading" aria-level="2" class="block-subtitle filter-subtitle"><?= $block->escapeHtml(__('Shopping Options')) ?></strong>
+                        <span class="close"><strong role="heading" aria-level="2" class="block-subtitle filter-subtitle"><?= $block->escapeHtml(__('Shopping Options')) ?></strong></span>
                         <div class="filter-options" id="narrow-by-list" data-role="content" data-mage-init='
                         {
                             "accordion":
@@ -77,7 +77,26 @@
             <?php endif; ?>
         </div>
     </div>
-<?php endif; ?>
-
+    <?php endif; ?>
+    <script>
+        require([
+            'jquery'
+            ], function ($) {
+                $(function () {
+                    $('.filter-content').click(function(){
+                        $('.filter-content').toggleClass('active');
+                       // $('.toolbar-products').hide();
+                     
+                        
+                        
+                    });
+                    $('.close').click(function(){
+                        $('.filter').toggleClass('active');
+                        //$('.toolbar-products').show();
+                       
+                    });
+                })
+            });
+        </script>
 
 

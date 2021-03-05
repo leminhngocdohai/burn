@@ -13,5 +13,8 @@
         <referenceContainer name="main.content">
             <block class="Magento\Framework\View\Element\Template" name="banner" as="banner" before="-" template="Magento_Catalog::category_banner.phtml" />
         </referenceContainer>
+         <referenceContainer name="page.main.title">
+            <block class="Magento\Framework\View\Element\Template" name="infor" as="infor" before="-" template="Magento_Catalog::category_infor.phtml" />
+        </referenceContainer>
     </body>
 </page>
