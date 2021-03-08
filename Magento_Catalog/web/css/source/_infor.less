@@ -1,14 +1,25 @@
 & when (@media-common = true) {
     .page-title-wrapper {
+        margin-top: 54px;
         h1{
             .lib-css(font-family, @font-family__roboto);
-            font-weight: 700;
-            font-size: 15px;
-            line-height: 20px;
+            font-weight: @font-weight-700;
+            font-size: @font-size-15;
+            line-height: @line-height-20;
+            margin-bottom: 5px;
         }
 
         .category_infor {
-            
+            .lib-css(font-family, @font-family__roboto);
+            font-weight: @font-weight-400;
+            font-size: @font-size-13;
+            line-height: @line-height-20;
+            p:nth-child(1) {
+                margin-bottom: @size-20;
+            }
         }
+    }
+    .columns .column.main {
+        padding: 0;
     }
 }
