@@ -39,14 +39,16 @@
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
     .category_banner {
         &_text {
-            .lib-css(top, 53%);
+            .lib-css(top, 53.1%);
             h1 {
                 .lib-css(font-size, @size-72); 
+                word-spacing: 2.5px;
             }
 
             h4 {
                 .lib-css(max-width, 60%);
-                margin-top: 24px;
+                margin-top: 23px;
+                word-spacing: 0.7px;
             }
 
         }
