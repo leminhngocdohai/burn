@@ -1,0 +1,116 @@
+& when (@media-common = true) {
+    .category_banner {
+        .lib-css(position, relative);
+        &_image {
+            .lib-css( max-width, 100%);
+            .lib-css(width, auto);
+            .lib-css(overflow, hidden);
+            >p {
+                .lib-css(display, flex);
+                .lib-css(justify-content, center);
+            }  
+
+            img {
+                 .lib-css(min-height, @size-153);
+                 .lib-css(min-width, @size-768);
+               
+            }
+             
+        }
+
+        &_text {
+            .lib-css(position, absolute);          
+            h1 {
+                .lib-css(font-family, @font-family__sunvalley);
+                .lib-css(color, @color-white);                                          
+            }
+
+            h4 {             
+                .lib-css(color, @color-white);  
+                
+            }
+
+        }
+
+    }
+    
+}
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
+    .category_banner {
+        &_text {
+            .lib-css(top, 53.1%);
+            h1 {
+                .lib-css(font-size, @size-72); 
+                word-spacing: 2.5px;
+            }
+
+            h4 {
+                .lib-css(max-width, 60%);
+                margin-top: 23px;
+                word-spacing: 0.7px;
+            }
+
+        }
+
+    }
+
+}
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+    .category_banner {
+        &_text {           
+            .lib-css(top, 40%);
+            .lib-css(left, 3.2%);
+            h1 {
+                .lib-css(font-size, @size-62); 
+            }
+
+            h4 {
+                .lib-css(max-width, 70%);
+                .lib-css(line-height, @h4-line-height);
+            }
+
+        }
+
+    }
+
+}
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+    .category_banner {
+        &_text {  
+            .lib-css(top, 60%);
+            .lib-css(left, 50%);
+            .lib-css(transform, translate(-50%, -50%));
+            .lib-css(text-align, center); 
+            .lib-css(width, 100%);           
+            h1 {
+                .lib-css(font-size, @size-40);                
+            }
+
+            h4 {
+                .lib-css(max-width, 100%);
+                .lib-css(line-height, @line-height-20);
+                .lib-css(font-size, @size-13);
+                .lib-css(padding, 0 5px);
+                .lib-css(letter-spacing, -0.5px);
+            }
+
+        }
+
+    }
+
+ }
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xs) {
+    .category_banner {
+        &_text {      
+            h1 {
+                .lib-css(font-size, @size-30);                 
+            }
+           
+        }
+
+    }
+
+ }
