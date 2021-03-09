@@ -1,0 +1,15 @@
+<div class="row">
+    <div class="col">
+        <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('home_banner_image')->toHtml(); ?>
+<!--        <div class="mobile">--><?php //echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('home_banner_image_mobile')->toHtml(); ?><!--</div>-->
+        <div class="home-banner-content">
+            <div class="home-banner-content-detail">
+                <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('home_banner_content')->toHtml(); ?>
+            </div>
+            <div class="col-content icon-next">
+                <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('home_banner_link')->toHtml(); ?>
+            </div>
+       </div>
+
+    </div>
+</div>
