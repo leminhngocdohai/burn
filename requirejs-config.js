@@ -1,14 +1,18 @@
 var config = {
     paths: {
-        'nav-tag': "js/nav-tag",
-        'accordion': "js/accordion"
+        'accordion': "js/accordion",
+        'owlcarousel': "js/owl.carousel.min",
+        'slick': "js/slick/slick"
+
     },
     shim: {
-        'nav-tag': {
+        'accordion': {
             deps: ['jquery']
         },
-
-        'accordion': {
+        'owlcarousel': {
+            deps: ['jquery']
+        },
+        'slick': {
             deps: ['jquery']
         }
     }
