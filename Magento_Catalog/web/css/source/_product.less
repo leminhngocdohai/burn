@@ -1,5 +1,25 @@
 & when (@media-common = true) {
-    .products {
+    button.action.primary {
+        .lib-button(
+            @_button-font-size: @font-size-13,
+            @_button-line-height:@line-height-20,
+            @_button-color: @color-black,
+            @_button-background:@color-white,
+            @_button-color-hover: @color-white,
+            @_button-color-active: @color-white,
+            @_button-border: @boder-size-2 solid @color-grey-default,
+            @_button-background-hover: @color-grey-default,
+            @_button-background-active: @color-grey-default,
+            @_button-border-hover: @boder-size-2 solid @color-grey-default,
+            @_button-border-active: @boder-size-2 solid @color-grey-default
+        );
+        .lib-css(font-family, @font-family__roboto);
+        color: @color-2d;
+        width: auto;
+        padding: 7px 17px 6px;
+    }
+
+    .products-grid {
         margin: 20px 0 0;
         clear: both;       
     }
@@ -99,34 +119,19 @@
 
     }
     
-    .product-item-inner {
+ 
         .product-item-actions {
             .actions-secondary {
                 display: none;
             }
 
-            .actions-primary {
-                .standard-button {
-                    .lib-css(font-family, @font-family__roboto);
-                    line-height: @line-height-20;
-                    color: @color-2d;
-                    width: auto;
-                    padding: 7px 17px 6px;
-                    &:hover {
-                        color: @color-white;
-                    }
-                }
-                
-            }
 
         }
-
-    }
 
 }
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__xl) {
-    .product-items-list {
+    .product-items {
         width: 103.3%;
     }
 
@@ -186,7 +191,7 @@
 }
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
-    .product-items-list {
+    .product-items{
         width: 100%;
     }
 
