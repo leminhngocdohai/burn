@@ -1,0 +1,98 @@
+<?php
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+/**
+ * @var $block \Magento\Cms\Block\Block
+ */
+?>
+<div class="showroom">
+    <div class="showroom-left">
+        <?php echo
+        $block->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('showroom-left')
+            ->toHtml(); ?>
+    </div>
+    <div class="showroom-middle">
+        <button class="standard-button">
+            <?php echo
+            $block->getLayout()
+                ->createBlock('Magento\Cms\Block\Block')
+                ->setBlockId('showroom-middle-button')
+                ->toHtml(); ?>
+        </button>
+        <?php echo
+        $block->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('showroom-middle-info')
+            ->toHtml(); ?>
+
+
+        <?php echo
+        $block->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('showroom-middle-more')
+            ->toHtml(); ?>
+
+
+    </div>
+    <div class="showroom-right">
+        <?php echo
+        $block->getLayout()
+            ->createBlock('Magento\Cms\Block\Block')
+            ->setBlockId('showroom-right')
+            ->toHtml(); ?>
+    </div>
+</div>
+
+<div class="banner">
+    <?php echo
+    $block->getLayout()
+        ->createBlock('Magento\Cms\Block\Block')
+        ->setBlockId('banner-img')
+        ->toHtml(); ?>
+    <?php echo
+    $block->getLayout()
+        ->createBlock('Magento\Cms\Block\Block')
+        ->setBlockId('banner-infor')
+        ->toHtml(); ?>
+</div>
+<div class="footer-top">
+    <ul>
+        <li class="ship">
+            <?php echo
+            $block->getLayout()
+                ->createBlock('Magento\Cms\Block\Block')
+                ->setBlockId('top-ship')
+                ->toHtml(); ?>
+        </li>
+        <li class="address">
+            <?php echo
+            $block->getLayout()
+                ->createBlock('Magento\Cms\Block\Block')
+                ->setBlockId('top-address')
+                ->toHtml(); ?>
+        </li>
+        <li class="money">
+            <?php echo
+            $block->getLayout()
+                ->createBlock('Magento\Cms\Block\Block')
+                ->setBlockId('top-money')
+                ->toHtml(); ?>
+        </li>
+        <li class="contact">
+            <?php echo
+            $block->getLayout()
+                ->createBlock('Magento\Cms\Block\Block')
+                ->setBlockId('top-contact')
+                ->toHtml(); ?>
+        </li>
+    </ul>
+
+</div>
+
+
+

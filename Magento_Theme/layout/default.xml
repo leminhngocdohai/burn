@@ -7,12 +7,27 @@
 -->
 <page layout="3columns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <update handle="default_head_blocks"/>
+    <referenceBlock name="skip_to_content" remove="true"/>
+    <referenceBlock name="store_language" remove="true"/>
+    <referenceBlock name="top.links" remove="false"/>
+    <referenceBlock name="footer_links" remove="true"/>
+    <referenceBlock name="report.bugs" remove="true"/>
+    <referenceBlock name="store_switcher" remove="true"/>
+    <referenceBlock name="form.subscribe" remove="false"/>
     <body>
          <referenceContainer name="header.panel" label="Page Header" htmlTag="div" htmlClass="panel header">
-            <referenceBlock name="skip_to_content" remove="true"/>
-            <referenceBlock name="store_language" remove="true"/>
-            <referenceBlock name="top.links" remove="true"/>
             <block class="Magento\Framework\View\Element\Template" name="header_top" before="-" template="Magento_Theme::html/header_top.phtml" />
+        </referenceContainer>
+
+        <referenceContainer name="footer" as="footer" label="Page Footer" htmlTag="div" htmlClass="footer content">
+            <block class="Magento\Framework\View\Element\Template" name="footer_top" before="-" template="Magento_Theme::html/footer.phtml" />
+            <block class="Magento\Framework\View\Element\Template" name="banner" template="Magento_Theme::html/banner.html"/>
+
+
+
+
+            <referenceBlock class="Magento\Theme\Block\Html\Footer" name="copyright" template="Magento_Theme::html/copyright.phtml"/>
+
         </referenceContainer>
 
 
