@@ -342,6 +342,8 @@
 
     .icon {
         .lib-css(color, @color-icon);
+        .lib-css(font-size, @size-18);
+        .lib-css(margin-left, 1.5rem);
         &:hover {
             .lib-css(color,@color-black);
         }
@@ -370,44 +372,12 @@
     }
 
     //cms block
-    .row {
-        .lib-css(margin, 0 -10px);
-        .lib-css(display, flex);
 
-        .col {
-            .lib-css(margin, 10px);
-            .lib-css(position, relative);
-
-            .col-content {
-                .lib-css(text-align, center);
-                .lib-css(position, absolute);
-                .lib-css(top, 50%);
-                .lib-css(left, 50%);
-                .lib-css(width, 100%);
-                .lib-css(transform, translate(-50%, -50%));
-                .lib-css(text-transform, uppercase);
-
-                a {
-                    .lib-css(text-decoration, none);
-                    .lib-css(font-family, @font-family__roboto);
-                    .lib-css(font-weight, 700);
-                    .lib-css(color, @color-white);
-                    .lib-css(background, @color-grey-default);
-                    .lib-css(border, @size-2 solid  @color-white);
-                    .lib-css(padding, @size-15);
-                }
-
-                a:hover {
-                    .lib-css(background, #262628);
-
-                }
-            }
-        }
-    }
 
 
     
 
 
 }
+
 
