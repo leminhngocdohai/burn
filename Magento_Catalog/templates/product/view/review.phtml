@@ -1,0 +1,49 @@
+<div class="review-product">
+    <p>The Amalfi 5 seater Modular Lounge Setting in Gun Metal / 
+    Sunbrella Canvas Coal from Royalle Outdoor Furniture features a  simplistic, elegant design, welded aluminium 
+    frame and Sunbrella high performance outdoor cushion covers. Read more</p>
+</div>
+
+<div class="product-price-detail">
+    <div id="accordion" data-mage-init='{
+            "accordion":{
+                "active": [0],
+                "collapsible": true,
+                "openedState": "active",
+                "multipleCollapsible": false
+            }}'
+    >
+        <div class="title" data-role="collapsible">
+            <div data-role="trigger">
+                <h4>This product includes <span id="product-include">-</span></h4>
+            </div>
+        </div>
+        <div class="content" data-role="content">
+            <p>1 x amalfi 130 coffee table: $395.00</p>
+            <p>1 x amalfi right two seater: $1095.00</p>
+            <p>1 x amalfi right two seater: $1095.00</p>
+            <p>1 x amalfi corner sofa: $695.00</p>
+            <p>rrp: $3,280.00</p>
+        </div>
+
+    </div>
+</div>
+
+<div class="gift">
+    <div class="gift-1">
+        <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('royalle')->toHtml(); ?>
+        <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('more_info')->toHtml(); ?>
+    </div>
+    <div class="gift-2">
+        <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('sunbrella')->toHtml(); ?>
+        <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('more_info')->toHtml(); ?>
+    </div>
+    <div class="gift-3">
+        <p class="bg"><?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('bg_gift')->toHtml(); ?></p>
+        <div class="content">
+            <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('price_gift')->toHtml(); ?>
+            <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('title_gift')->toHtml(); ?>
+        </div>
+    </div>
+</div>
+
