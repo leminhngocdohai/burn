@@ -1,0 +1,31 @@
+& when (@media-common = true) {
+
+    .page-title-wrapper {
+        h1{
+            .lib-css(font-family, @font-family__roboto);
+            font-weight: @font-weight-700;
+            font-size: @font-size-15;
+            line-height: @line-height-20;
+            margin-bottom: 5px;
+            margin-top: 53px;
+
+        }
+
+        .category_infor {
+            .lib-css(font-family, @font-family__roboto);
+            font-weight: @font-weight-400;
+            font-size: @font-size-13;
+            line-height: @line-height-20;
+            word-spacing: 0.5px;
+            p:nth-child(1) {
+                margin-bottom: 20px;
+            }
+            p:nth-child(2) {
+                word-spacing: 0.7px;
+            }
+        }
+    }
+    .columns .column.main {
+        padding: 0;
+    }
+}
