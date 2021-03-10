@@ -59,7 +59,7 @@ $_helper = $this->helper(Magento\Catalog\Helper\Output::class);
                                     . 'top:' . $productImage->getHeight() . 'px;"';
                             }
                             ?>
-                            <?php // Product Image 
+                            <?php // Product Image
                             ?>
                             <a href="<?= $block->escapeUrl($_product->getProductUrl()) ?>" class="product photo product-item-photo" tabindex="-1">
                                 <?= $productImage->toHtml() ?>
@@ -128,7 +128,7 @@ $_helper = $this->helper(Magento\Catalog\Helper\Output::class);
                                                     <input type="hidden" name="product" value="<?= /* @noEscape */ $postParams['data']['product'] ?>">
                                                     <input type="hidden" name="<?= /* @noEscape */ Action::PARAM_NAME_URL_ENCODED ?>" value="<?= /* @noEscape */ $postParams['data'][Action::PARAM_NAME_URL_ENCODED] ?>">
                                                     <?= $block->getBlockHtml('formkey') ?>
-                                                    <button type="submit" title="<?= $block->escapeHtmlAttr(__('Add to Cart')) ?>" class="standard-button">
+                                                    <button type="submit" title="<?= $block->escapeHtmlAttr(__('Add to Cart')) ?>" class="action tocart primary">
                                                         <span><?= $block->escapeHtml(__('Add to Cart')) ?></span>
                                                     </button>
                                                 </form>
