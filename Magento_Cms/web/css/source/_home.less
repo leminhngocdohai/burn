@@ -80,7 +80,7 @@
         }
     }
     .block-title {
-        display: none;
+        display: block;
     }
 
 }
@@ -1773,4 +1773,31 @@
             }
         }
     }
+}
+
+/*Best sellers, New arrivals*/
+
+& when (@media-common = true){
+    .best-sellers-slick, .new_arrivals-slick {
+        margin-top: 3.5rem;
+        .slick-arrow {
+            top: 26%;
+        }
+        .product-items {
+            width: 100%;
+            .slick-list {
+                max-height: 400px;
+                .slick-active {
+                    margin-left: 11px;
+                    .product-item-details {
+                        padding-right: 52px;
+                    }
+                }
+                .slick-current {
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+
 }
