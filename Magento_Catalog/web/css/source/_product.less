@@ -2,6 +2,7 @@
     button.action.primary {
         .lib-button(
             @_button-font-size: @font-size-13,
+            @_button-line-height:@line-height-20,
             @_button-color: @color-black,
             @_button-background:@color-white,
             @_button-color-hover: @color-white,
@@ -13,22 +14,12 @@
             @_button-border-active: @boder-size-2 solid @color-grey-default
         );
         .lib-css(font-family, @font-family__roboto);
-        line-height: @line-height-20;
         color: @color-2d;
         width: auto;
         padding: 7px 17px 6px;
-        &:hover {
-            color: @color-white;
-        }
     }
-    .product-item-name {
-        a {
-            font-weight: @font-weight-700;
-            line-height: @line-height-18;
-            color: @color-black-222;
-        }
 
-    }
+
     .products-grid {
         margin: 20px 0 0;
         clear: both;
@@ -79,10 +70,6 @@
 
             }
 
-            .product-item-details {
-
-            }
-
         }
 
     }
@@ -120,15 +107,14 @@
         }
 
     }
-
-        .product-item-actions {
-            .actions-secondary {
-                display: none;
-            }
-
+    .product-item-actions {
+        .actions-secondary {
+            display: none;
         }
-}
+    }
 
+
+}
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__xl) {
     .product-items {
         width: 103.3%;
@@ -190,6 +176,7 @@
 }
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
     .product-items {
         width: 100%;
     }
