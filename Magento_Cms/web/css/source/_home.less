@@ -1830,3 +1830,39 @@
         }
     }
 }
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xs){
+    .best-sellers-slick, .new_arrivals-slick {
+        .product-items {
+            .slick-list {
+                max-height: 550px;
+                .slick-slide {
+                    .additional_attr {
+                        margin-top: -2.1rem;
+                        p {
+                            letter-spacing: 1.2px;
+                        }
+                    }
+                    .product-item-details {
+                        padding-right: 0px;
+                        margin-top: -3px;
+                        line-height: 17px;
+                        .product-item-name {
+                            hyphens: none;
+                        }
+                        .price-box {
+                            margin: 16px 0px 13px 0px;
+                        }
+                    }
+                }
+                .slick-active {
+                    margin-left: 5px;
+                    margin-top: -3px;
+                }
+                .slick-current {
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
+}
