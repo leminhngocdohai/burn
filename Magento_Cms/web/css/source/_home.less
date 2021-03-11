@@ -376,6 +376,7 @@
 
     .home-main-content{
         margin-bottom: 4px;
+
         .row {
             .col {
                 .col-content {
@@ -910,10 +911,11 @@
 }
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m){
     .best-sellers {
-        margin-top: 4.2rem;
+        margin-top: 4.3rem;
     }
 
     .best-sellers, .new-arrivals {
+        margin-bottom: -1.3rem;
         .home-title {
             h4 {
                 &::before{
@@ -1778,6 +1780,10 @@
 /*Best sellers, New arrivals*/
 
 & when (@media-common = true){
+
+
+}
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__xl){
     .best-sellers-slick, .new_arrivals-slick {
         margin-top: 3.5rem;
         .slick-arrow {
@@ -1799,5 +1805,28 @@
             }
         }
     }
+}
 
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m){
+    .best-sellers-slick, .new_arrivals-slick {
+        margin-top: 3.5rem;
+        .slick-arrow {
+            top: 26%;
+        }
+        .product-items {
+            width: 100%;
+            .slick-list {
+                max-height: 450px;
+                .slick-active {
+                    margin-left: 11px;
+                    .product-item-details {
+                        padding-right: 52px;
+                    }
+                }
+                .slick-current {
+                    margin-left: 0px;
+                }
+            }
+        }
+    }
 }
