@@ -12,18 +12,18 @@
     .clearfix::after {
         content: "";
         clear: both;
-        display: table;
+        .lib-css(display, table);
     }
 
     .product.info.detailed {
-        display: none;
+        .lib-css(display, none);
     }
 
     .product-options-bottom {
         .box-to-cart {
             .fieldset {
                 .adjust-button {
-                    float: left;
+                    .lib-css(float, left);
                     padding-right: 5.5%;
                     padding-bottom: 15px;
                 }
@@ -35,27 +35,27 @@
         &__fieldset {
             &__color {
                 p {
-                    font-size: 13px;
-                    line-height: 20px;
-                    color: #222222;
-                    font-weight: 700;
-                    font-family: "Roboto";  
+                    .lib-css(font-size, 13px);
+                    .lib-css(line-height, 20px);
+                    .lib-css(color, #222);
+                    .lib-css(font-weight, 700);
+                    .lib-css(font-family, @font-family-name__roboto);  
                 }
             }
         }
     }
 
     .product-details-2{
-        display: none;
+        .lib-css(display, none);
     }
 
     .product-details {
-        float: left ;
-        border: 1px solid #ddd;
+        .lib-css(float, left);
+        .lib-css(border, 1px solid #ddd);
         padding: 20px;
 
         .first-content {
-            border-bottom: 1px solid #ddd;
+            .lib-css(border-bottom, 1px solid #ddd);
             padding-bottom: 20px;
         }
 
@@ -65,21 +65,21 @@
                 margin-bottom: 0;
                 padding: 10px 0;
 
-                font-size: 13px;
-                line-height: 20px;
-                color: #222222;
-                font-weight: 700;
-                font-family: "Roboto";
-                text-transform: uppercase;
+                .lib-css(font-size, 13px);
+                .lib-css(line-height, 20px);
+                .lib-css(color, #222);
+                .lib-css(font-weight, 700);
+                .lib-css(font-family, @font-family-name__roboto);
+                .lib-css(text-transform, uppercase);
             }
         }
 
         .content {
-            font-size: 14px;
-            line-height: 20px;
-            color: #222222;
-            font-weight: 400;
-            font-family: "Roboto";
+            .lib-css(font-size, 14px);
+            .lib-css(line-height, 20px);
+            .lib-css(color, #222);
+            .lib-css(font-weight, 400);
+            .lib-css(font-family, @font-family-name__roboto);
 
             .product-blog {
                 .container {
@@ -89,16 +89,16 @@
                         .readmore {
                             padding-bottom: 25px;
                             padding-top: 25px;
-                            border-bottom: 1px solid #ddd;
+                            .lib-css(border-bottom, 1px solid #ddd);
         
                             &__img,
                             &__content {
-                                text-align: center;
+                                .lib-css(text-align, center);
                             }
         
                             &__img {
                                 img {
-                                    width: 100%;
+                                    .lib-css(width, 100%);
                                     height: auto;
                                 }
                             }
@@ -108,29 +108,29 @@
                                     margin-top: 0;
                                     margin-bottom: 0;
         
-                                    font-size: 20px;
-                                    line-height: 36px;
-                                    color: #222222;
-                                    font-weight: 400;
-                                    font-family: "Lora";
-                                    text-transform: capitalize;
+                                    .lib-css(font-size, 20px);
+                                    .lib-css(line-height, 36px);
+                                    .lib-css(color, #222);
+                                    .lib-css(font-weight, 400);
+                                    .lib-css(font-family, @font-family-name__lora);
+                                    .lib-css(text-transform, capitalize);
                                 }
         
                                 p {
-                                    font-size: 14px;
-                                    line-height: 20px;
-                                    color: #222222;
-                                    font-weight: 400;
-                                    font-family: "Roboto";
+                                    .lib-css(font-size, 14px);
+                                    .lib-css(line-height, 20px);
+                                    .lib-css(color, #222);
+                                    .lib-css(font-weight, 400);
+                                    .lib-css(font-family, @font-family-name__roboto);
                                 }
         
                                 a {
-                                    font-size: 13px;
-                                    line-height: 20px;
-                                    color: #333333;
-                                    font-weight: 400;
-                                    font-family: "Roboto";
-                                    border-bottom: 1px solid #ddd;
+                                    .lib-css(font-size, 13px);
+                                    .lib-css(line-height, 20px);
+                                    .lib-css(color, #333333);
+                                    .lib-css(font-weight, 400);
+                                    .lib-css(font-family, @font-family-name__roboto);
+                                    .lib-css(border-bottom, 1px solid #ddd);
                                 }
                             }
                         }
@@ -141,7 +141,7 @@
     }
 
     .swatch-attribute .size {
-        display: none;
+        .lib-css(display, none);
     }
 
     .product-info-main {
@@ -153,54 +153,54 @@
             .lib-css(color, #222);
             .lib-css(line-height, @size-26);
             .lib-css(letter-spacing, -1px);
-            text-transform: capitalize;
+            .lib-css(text-transform, capitalize);
         }
 
         .product-info-price {
             padding-bottom: 15px;
-            border-bottom: 1px solid #ddd;
+            .lib-css(border-bottom, 1px solid #ddd);
     
             .price-label {
-                display: none;
+                .lib-css(display, none);
             }
     
             .reviews-actions {
-                font-size: 14px;
-                line-height: 20px;
-                color: #777777;
-                font-weight: 400;
+                .lib-css(font-size, 14px);
+                .lib-css(line-height, 20px);
+                .lib-css(color, #777);
+                .lib-css(font-weight, 400);
                 font-style: italic;
-                font-family: "Roboto";
+                .lib-css(font-family, @font-family-name__roboto);
             }
     
             .price-box .price-wrapper .price{
-                font-size: 22px;
-                line-height: 18px;
-                color: #666666;
-                font-weight: 400;
-                font-family: "Roboto";
+                .lib-css(font-size, 22px);
+                .lib-css(line-height, 18px);
+                .lib-css(color, #666);
+                .lib-css(font-weight, 400);
+                .lib-css(font-family, @font-family-name__roboto);
             }
         }
         
         .review-product {
             p {
                 padding-bottom: 17px;
-                border-bottom: 1px solid #ddd;;
+                .lib-css(border-bottom, 1px solid #ddd);
             }
         }
 
         .product-price-detail {
-            border-bottom: 1px solid #ddd;;
+            .lib-css(border-bottom, 1px solid #ddd);
             .title {
                 h4 {
-                    font-size: 13px;
-                    line-height: 20px;
-                    color: #222222;
-                    font-weight: 700;
-                    font-family: "Roboto";
+                    .lib-css(font-size, 13px);
+                    .lib-css(line-height, 20px);
+                    .lib-css(color, #222);
+                    .lib-css(font-weight, 700);
+                    .lib-css(font-family, @font-family-name__roboto);
 
                     span {
-                        float: right;
+                        .lib-css(float, right);
                     }
                 }
             }
@@ -208,17 +208,17 @@
             .content {
                 margin-top: -6px;
                 p {
-                    font-size: 13px;
-                    line-height: 10px;
-                    color: #333333;
-                    font-weight: 400;
-                    font-family: "Roboto";
-                    text-transform: capitalize;
+                    .lib-css(font-size, 13px);
+                    .lib-css(line-height, 10px);
+                    .lib-css(color, #333333);
+                    .lib-css(font-weight, 400);
+                    .lib-css(font-family, @font-family-name__roboto);
+                    .lib-css(text-transform, capitalize);
                 }
 
                 p:last-child {
-                    text-transform: uppercase;
-                    line-height: 25px;
+                    .lib-css(text-transform, uppercase);
+                    .lib-css(line-height, 25px);
                 }
             }
 
@@ -229,66 +229,66 @@
             padding-top: 20px;
 
             .gift-1 {
-                float: left;
-                width: 45%;
-                text-align: center;
+                .lib-css(float, left);
+                .lib-css(width, 45%);
+                .lib-css(text-align, center);
 
                 span {
-                    font-size: 12px;
-                    line-height: 20px;
-                    color: #111111;
-                    font-weight: 400;
-                    font-family: "Roboto";
+                    .lib-css(font-size, 12px);
+                    .lib-css(line-height, 20px);
+                    .lib-css(color, #111111);
+                    .lib-css(font-weight, 400);
+                    .lib-css(font-family, @font-family-name__roboto);
                 }
             }
             .gift-2 {
-                float: right;
-                width: 45%;
-                text-align: center;
+                .lib-css(float, right);
+                .lib-css(width, 45%);
+                .lib-css(text-align, center);
 
                 span {
-                    font-size: 12px;
-                    line-height: 20px;
-                    color: #111111;
-                    font-weight: 400;
-                    font-family: "Roboto";
+                    .lib-css(font-size, 12px);
+                    .lib-css(line-height, 20px);
+                    .lib-css(color, #111111);
+                    .lib-css(font-weight, 400);
+                    .lib-css(font-family, @font-family-name__roboto);
                 }
             }
 
             .gift-3 {
-                float: left;
-                width: 100%;
-                position: relative;
+                .lib-css(float, left);
+                .lib-css(width, 100%);
+                .lib-css(position, relative);
                 .bg {
                     img {
-                        width: 100%;
+                        .lib-css(width, 100%);
                         max-height: 110px;
                     }
                 }
 
                 .content {
-                    width: 100%;
-                    position: absolute;
+                    .lib-css(width, 100%);
+                    .lib-css(position, absolute);
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
                     -ms-transform: translate(-50%, -50%);
-                    text-align: center;
+                    .lib-css(text-align, center);
 
                     p:first-child {
-                        font-size: 20px;
-                        line-height: 6px;
-                        color: #222222;
+                        .lib-css(font-size, 20px);
+                        .lib-css(line-height, 6px);
+                        .lib-css(color, #222);
                         font-weight: 500;
-                        font-family: "Roboto";
+                        .lib-css(font-family, @font-family-name__roboto);
                     }
 
                     p:last-child {
-                        font-size: 15px;
-                        line-height: 24px;
-                        color: #333333;
-                        font-weight: 400;
-                        font-family: "Roboto";
+                        .lib-css(font-size, 15px);
+                        .lib-css(line-height, 24px);
+                        .lib-css(color, #333333);
+                        .lib-css(font-weight, 400);
+                        .lib-css(font-family, @font-family-name__roboto);
                     }
                 }
             }
@@ -298,7 +298,7 @@
 
     .u-may-so-like {
         h3 {
-            display: flex;
+            .lib-css(display, flex);
             align-items: center;
             justify-content: center;
         }
@@ -315,55 +315,55 @@
         }
 
         .list {
-            width: 100%;
+            .lib-css(width, 100%);
 
             .item {
-                float: left;
-                width: 50%;
-                text-align: left;
+                .lib-css(float, left);
+                .lib-css(width, 50%);
+                .lib-css(text-align, left);
 
                 .more {
-                    text-transform: uppercase;
-                    font-size: 11px;
-                    letter-spacing: 1.2px;
-                    line-height: 24px;
-                    color: #333333;
-                    font-weight: 400;
-                    font-family: "Roboto";
+                    .lib-css(text-transform, uppercase);
+                    .lib-css(font-size, 11px);
+                    .lib-css(letter-spacing, 1.2px);
+                    .lib-css(line-height, 24px);
+                    .lib-css(color, #333333);
+                    .lib-css(font-weight, 400);
+                    .lib-css(font-family, @font-family-name__roboto);
                 }
     
                 p {
                     button {
                         max-width: none;
-                        width: auto;
+                        .lib-css(width, auto);
     
-                        font-size: 13px;
-                        line-height: 20px;
-                        color: #2d2d2f;
-                        font-weight: 700;
-                        font-family: "Roboto";
+                        .lib-css(font-size, 13px);
+                        .lib-css(line-height, 20px);
+                        .lib-css(color, #2d2d2f);
+                        .lib-css(font-weight, 700);
+                        .lib-css(font-family, @font-family-name__roboto);
                     }
                 }
                 h4 {
-                    letter-spacing: 0;
-                    font-size: 13px;
-                    line-height: 18px;
-                    color: #222222;
-                    font-weight: 700;
-                    font-family: "Roboto";
+                    .lib-css(letter-spacing, 0);
+                    .lib-css(font-size, 13px);
+                    .lib-css(line-height, 18px);
+                    .lib-css(color, #222);
+                    .lib-css(font-weight, 700);
+                    .lib-css(font-family, @font-family-name__roboto);
                     padding-right: 13%;
                 }
     
                 .price {
-                    letter-spacing: 2px;
-                    font-size: 16px;
-                    line-height: 18px;
-                    color: #666666;
-                    font-weight: 400;
-                    font-family: "Roboto";
+                    .lib-css(letter-spacing, 2px);
+                    .lib-css(font-size, 16px);
+                    .lib-css(line-height, 18px);
+                    .lib-css(color, #666);
+                    .lib-css(font-weight, 400);
+                    .lib-css(font-family, @font-family-name__roboto);
                     // text-decoration: line-through;
                     span {
-                        color: red;
+                        .lib-css(color, red);
                         padding-left: 15px;
                     }
                 }
@@ -374,36 +374,36 @@
     .modal-body-content {
 
         .img {
-            float: left;
-            width: 100%;
-            text-align: center;
+            .lib-css(float, left);
+            .lib-css(width, 100%);
+            .lib-css(text-align, center);
         }
         .content {
-            float: left;
-            width: 100%;
-            text-align: center;
+            .lib-css(float, left);
+            .lib-css(width, 100%);
+            .lib-css(text-align, center);
 
             p {
                 button {
                     max-width: none;
-                    width: 100%;
+                    .lib-css(width, 100%);
                 }
             }
         }
     
 
         .title {
-            float: left;
-            width: 100%;
+            .lib-css(float, left);
+            .lib-css(width, 100%);
 
             h3 {
-                width: 100%;
+                .lib-css(width, 100%);
                 
-                color: red;
+                .lib-css(color, red);
             }
 
             h3 {
-                display: flex;
+                .lib-css(display, flex);
                 align-items: center;
                 justify-content: center;
             }
@@ -421,46 +421,46 @@
         }
 
         .related {
-            float: left;
-            width: 100%;
-            text-align: center;
+            .lib-css(float, left);
+            .lib-css(width, 100%);
+            .lib-css(text-align, center);
 
             padding: 15px 0;
-            border-bottom: 1px solid #ddd;
+            .lib-css(border-bottom, 1px solid #ddd);
 
             p {
                 button {
                     max-width: none;
                     width: auto;
 
-                    font-size: 13px;
-                    line-height: 20px;
-                    color: #2d2d2f;
-                    font-weight: 700;
-                    font-family: "Roboto";
+                    .lib-css(font-size, 13px);
+                    .lib-css(line-height, 20px);
+                    .lib-css(color, #2d2d2f);
+                    .lib-css(font-weight, 700);
+                    .lib-css(font-family, @font-family-name__roboto);
                 }
             }
             h4 {
-                font-size: 13px;
-                line-height: 18px;
-                color: #222222;
-                font-weight: 700;
-                font-family: "Roboto";
+                .lib-css(font-size, 13px);
+                .lib-css(line-height, 18px);
+                .lib-css(color, #222);
+                .lib-css(font-weight, 700);
+                .lib-css(font-family, @font-family-name__roboto);
             }
 
             .price {
-                font-size: 20px;
-                line-height: 18px;
-                color: #666666;
-                font-weight: 400;
-                font-family: "Roboto";
+                .lib-css(font-size, 20px);
+                .lib-css(line-height, 18px);
+                .lib-css(color, #666);
+                .lib-css(font-weight, 400);
+                .lib-css(font-family, @font-family-name__roboto);
             }
         } 
 
     }
 
     .action-close {
-        width: 60px;
+        .lib-css(width, 60px);
     }
    
 }
@@ -475,24 +475,24 @@
                     padding: 20px 0;
                     &__img,
                     &__content {
-                        float: left;
-                        width: 50%;
+                        .lib-css(float, left);
+                        .lib-css(width, 50%);
                     }
             
                     &__content {
-                        text-align: center;
+                        .lib-css(text-align, center);
                         p {
                             padding: 0 30px;
                         }
 
                         a{
-                            font-size: 13px;
-                            line-height: 20px;
-                            color: #333333;
-                            font-weight: 400;
-                            font-family: "Roboto";
-                            text-decoration: underline;
-                            text-transform: capitalize;
+                            .lib-css(font-size, 13px);
+                            .lib-css(line-height, 20px);
+                            .lib-css(color, #333333);
+                            .lib-css(font-weight, 400);
+                            .lib-css(font-family, @font-family-name__roboto);
+                            .lib-css(text-decoration, underline);
+                            .lib-css(text-transform, capitalize);
                         }
                     }
                 }
@@ -509,69 +509,69 @@
 
     .page-layout-1column {
         .product.media {
-            width: 66%;
+            .lib-css(width, 66%);
         }
 
         .product-info-main {
-            width: 33%;
+            .lib-css(width, 33%);
         }
     }
 
     .modal-popup .modal-inner-wrap {
-        width: 80%;
+        .lib-css(width, 80%);
     }
 
     .modal-body-content  {
         .img {
-            width: 50%;
+            .lib-css(width, 50%);
 
         }
         .content {
-            width: 50%;
+            .lib-css(width, 50%);
         }
 
         .related {
-            width: 30%;
+            .lib-css(width, 30%);
             padding: 0 3.33% 0 0;
-            border-bottom: none;
+            .lib-css(border-bottom, none);
         }
     }
 
     .u-may-so-like {
         .list {
             .item {
-                width: 25%;
+                .lib-css(width, 25%);
                 padding-right: 0;
             } 
         }
     }
 
     .product-details-2{
-        border: 1px solid #ddd;
+        .lib-css(border, 1px solid #ddd);
         .title {
             margin: auto !important;
 
             h3 {
-                font-size: 18px;
-                color: #222222;
-                font-weight: 400;
-                font-family: "Roboto";
-                letter-spacing: -0.3px;
+                .lib-css(font-size, 18px);
+                .lib-css(color, #222);
+                .lib-css(font-weight, 400);
+                .lib-css(font-family, @font-family-name__roboto);
+                .lib-css(letter-spacing, -0.3px);
             }
 
             .switch {
-                text-transform: uppercase;
-                font-size: 13px;
-                line-height: 20px;
-                color: #222222;
-                font-weight: 700;
-                font-family: "Roboto";
+                .lib-css(text-transform, uppercase);
+                .lib-css(font-size, 13px);
+                .lib-css(line-height, 20px);
+                .lib-css(color, #222);
+                .lib-css(font-weight, 700);
+                .lib-css(font-family, @font-family-name__roboto);
 
             }
         }
 
         .first-content {
-            border-bottom: 1px solid #ddd;
+            .lib-css(border-bottom, 1px solid #ddd);
             padding-bottom: 26px;
             margin-top: -11px;
         }
@@ -579,23 +579,23 @@
         .product-blog {
             .readmore {
                 
-                border-bottom: 1px solid #ddd;
+                .lib-css(border-bottom, 1px solid #ddd);
 
                 &__content {
                     h4 {
-                        font-size: 20px;
-                        line-height: 36px;
-                        color: #222222;
-                        font-weight: 400;
-                        font-family: "Lora";
-                        text-transform: capitalize;
+                        .lib-css(font-size, 20px);
+                        .lib-css(line-height, 36px);
+                        .lib-css(color, #222);
+                        .lib-css(font-weight, 400);
+                        .lib-css(font-family, @font-family-name__lora);
+                        .lib-css(text-transform, capitalize);
                     }
                     p {
-                        font-size: 13px;
-                        line-height: 20px;
-                        color: #333333;
-                        font-weight: 400;
-                        font-family: "Roboto";
+                        .lib-css(font-size, 13px);
+                        .lib-css(line-height, 20px);
+                        .lib-css(color, #333333);
+                        .lib-css(font-weight, 400);
+                        .lib-css(font-family, @font-family-name__roboto);
                     }
                 }
             }
@@ -609,8 +609,8 @@
             > .switch {
                 height: 40px;
                 font-weight: 600;
-                letter-spacing: -0.5px;
-                line-height: 45px;
+                .lib-css(letter-spacing, -0.5px);
+                .lib-css(line-height, 45px);
                 padding: 3px 23px 5px 23px;
             }
         }
@@ -628,45 +628,45 @@
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
     .product-details {
-        width: 66%;
+        .lib-css(width, 66%);
     }
 
     .modal-popup .modal-inner-wrap {
-        width: 55%;
+        .lib-css(width, 55%);
     }
 
 }
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__xl) {
     .product-details{
-        display: none;
+        .lib-css(display, none);
     }
 
     .product-details-2 {
-        display: block;
-        float: left;
+        .lib-css(display, block);
+        .lib-css(float, left);
         width: 64.25% !important;
         margin-top: 1px;
         
     }
 
     .modal-popup .modal-inner-wrap {
-        width: 45%;
+        .lib-css(width, 45%);
     }
 
     .product-info-main {
-        border: 1px solid #ddd;
+        .lib-css(border, 1px solid #ddd);
         padding-left: 8px;
         margin-top: -3px;
         padding-bottom: 4px;
 
         .page-title-wrapper {
             .page-title {
-                text-transform: capitalize;
+                .lib-css(text-transform, capitalize);
                 padding: 23px 50px 10px 19px;
                 margin-top: 2px;
-                line-height: 25px;
-                letter-spacing: -0.5px;
+                .lib-css(line-height, 25px);
+                .lib-css(letter-spacing, -0.5px);
             }
         }
 
@@ -681,7 +681,7 @@
 
             .product-options-wrapper {
                 .size {
-                    display: none;
+                    .lib-css(display, none);
                 }
                 
             }
@@ -692,7 +692,7 @@
                     p {
                         button {
                             max-width: none;
-                            width: 222px;
+                            .lib-css(width, 222PX);
                         }
                     }
                 }
@@ -703,7 +703,7 @@
         .review-product {
             margin: 0 20px;
             padding: 3px 20px 0 0;
-            letter-spacing: 0.075px;
+            .lib-css(letter-spacing, 0.075px);
         }
 
         .product-price-detail {
@@ -758,11 +758,11 @@
     .u-may-so-like {
         .title {
             h3 {
-                font-size: 24px;
-                color: #222222;
-                font-weight: 400;
-                font-family: "Lora";
-                letter-spacing: 1.5px;
+                .lib-css(font-size, 24px);
+                .lib-css(color, #222);
+                .lib-css(font-weight, 400);
+                .lib-css(font-family, @font-family-name__lora);
+                .lib-css(letter-spacing, 1.5px);
             }
         }
 
