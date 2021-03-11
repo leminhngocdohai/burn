@@ -12,18 +12,28 @@
     .clearfix::after {
         content: "";
         clear: both;
-        .lib-css(display, table);
+        display: table;
+    }
+
+    .page-title {
+        .lib-css(font-family, @font-family-name__lora);
+        .lib-css(font-size, @size-22);
+        .lib-css(font-weight, 400);
+        .lib-css(color, #222);
+        .lib-css(line-height, @size-26);
+        .lib-css(letter-spacing, -1px);
+        text-transform: capitalize;
     }
 
     .product.info.detailed {
-        .lib-css(display, none);
+        display: none;
     }
 
     .product-options-bottom {
         .box-to-cart {
             .fieldset {
                 .adjust-button {
-                    .lib-css(float, left);
+                    float: left;
                     padding-right: 5.5%;
                     padding-bottom: 15px;
                 }
@@ -35,27 +45,27 @@
         &__fieldset {
             &__color {
                 p {
-                    .lib-css(font-size, 13px);
-                    .lib-css(line-height, 20px);
-                    .lib-css(color, #222);
-                    .lib-css(font-weight, 700);
-                    .lib-css(font-family, @font-family-name__roboto);  
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: #222222;
+                    font-weight: 700;
+                    font-family: "Roboto";  
                 }
             }
         }
     }
 
     .product-details-2{
-        .lib-css(display, none);
+        display: none;
     }
 
     .product-details {
-        .lib-css(float, left);
-        .lib-css(border, 1px solid #ddd);
+        float: left ;
+        border: 1px solid #ddd;
         padding: 20px;
 
         .first-content {
-            .lib-css(border-bottom, 1px solid #ddd);
+            border-bottom: 1px solid #ddd;
             padding-bottom: 20px;
         }
 
@@ -65,21 +75,21 @@
                 margin-bottom: 0;
                 padding: 10px 0;
 
-                .lib-css(font-size, 13px);
-                .lib-css(line-height, 20px);
-                .lib-css(color, #222);
-                .lib-css(font-weight, 700);
-                .lib-css(font-family, @font-family-name__roboto);
-                .lib-css(text-transform, uppercase);
+                font-size: 13px;
+                line-height: 20px;
+                color: #222222;
+                font-weight: 700;
+                font-family: "Roboto";
+                text-transform: uppercase;
             }
         }
 
         .content {
-            .lib-css(font-size, 14px);
-            .lib-css(line-height, 20px);
-            .lib-css(color, #222);
-            .lib-css(font-weight, 400);
-            .lib-css(font-family, @font-family-name__roboto);
+            font-size: 14px;
+            line-height: 20px;
+            color: #222222;
+            font-weight: 400;
+            font-family: "Roboto";
 
             .product-blog {
                 .container {
@@ -89,16 +99,16 @@
                         .readmore {
                             padding-bottom: 25px;
                             padding-top: 25px;
-                            .lib-css(border-bottom, 1px solid #ddd);
+                            border-bottom: 1px solid #ddd;
         
                             &__img,
                             &__content {
-                                .lib-css(text-align, center);
+                                text-align: center;
                             }
         
                             &__img {
                                 img {
-                                    .lib-css(width, 100%);
+                                    width: 100%;
                                     height: auto;
                                 }
                             }
@@ -108,29 +118,29 @@
                                     margin-top: 0;
                                     margin-bottom: 0;
         
-                                    .lib-css(font-size, 20px);
-                                    .lib-css(line-height, 36px);
-                                    .lib-css(color, #222);
-                                    .lib-css(font-weight, 400);
-                                    .lib-css(font-family, @font-family-name__lora);
-                                    .lib-css(text-transform, capitalize);
+                                    font-size: 20px;
+                                    line-height: 36px;
+                                    color: #222222;
+                                    font-weight: 400;
+                                    font-family: "Lora";
+                                    text-transform: capitalize;
                                 }
         
                                 p {
-                                    .lib-css(font-size, 14px);
-                                    .lib-css(line-height, 20px);
-                                    .lib-css(color, #222);
-                                    .lib-css(font-weight, 400);
-                                    .lib-css(font-family, @font-family-name__roboto);
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                    color: #222222;
+                                    font-weight: 400;
+                                    font-family: "Roboto";
                                 }
         
                                 a {
-                                    .lib-css(font-size, 13px);
-                                    .lib-css(line-height, 20px);
-                                    .lib-css(color, #333333);
-                                    .lib-css(font-weight, 400);
-                                    .lib-css(font-family, @font-family-name__roboto);
-                                    .lib-css(border-bottom, 1px solid #ddd);
+                                    font-size: 13px;
+                                    line-height: 20px;
+                                    color: #333333;
+                                    font-weight: 400;
+                                    font-family: "Roboto";
+                                    border-bottom: 1px solid #ddd;
                                 }
                             }
                         }
@@ -141,66 +151,55 @@
     }
 
     .swatch-attribute .size {
-        .lib-css(display, none);
+        display: none;
     }
 
     .product-info-main {
-
-        .page-title {
-            .lib-css(font-family, @font-family-name__lora);
-            .lib-css(font-size, @size-22);
-            .lib-css(font-weight, 400);
-            .lib-css(color, #222);
-            .lib-css(line-height, @size-26);
-            .lib-css(letter-spacing, -1px);
-            .lib-css(text-transform, capitalize);
-        }
-
         .product-info-price {
             padding-bottom: 15px;
-            .lib-css(border-bottom, 1px solid #ddd);
+            border-bottom: 1px solid #ddd;
     
             .price-label {
-                .lib-css(display, none);
+                display: none;
             }
     
             .reviews-actions {
-                .lib-css(font-size, 14px);
-                .lib-css(line-height, 20px);
-                .lib-css(color, #777);
-                .lib-css(font-weight, 400);
+                font-size: 14px;
+                line-height: 20px;
+                color: #777777;
+                font-weight: 400;
                 font-style: italic;
-                .lib-css(font-family, @font-family-name__roboto);
+                font-family: "Roboto";
             }
     
             .price-box .price-wrapper .price{
-                .lib-css(font-size, 22px);
-                .lib-css(line-height, 18px);
-                .lib-css(color, #666);
-                .lib-css(font-weight, 400);
-                .lib-css(font-family, @font-family-name__roboto);
+                font-size: 22px;
+                line-height: 18px;
+                color: #666666;
+                font-weight: 400;
+                font-family: "Roboto";
             }
         }
         
         .review-product {
             p {
                 padding-bottom: 17px;
-                .lib-css(border-bottom, 1px solid #ddd);
+                border-bottom: 1px solid #ddd;;
             }
         }
 
         .product-price-detail {
-            .lib-css(border-bottom, 1px solid #ddd);
+            border-bottom: 1px solid #ddd;;
             .title {
                 h4 {
-                    .lib-css(font-size, 13px);
-                    .lib-css(line-height, 20px);
-                    .lib-css(color, #222);
-                    .lib-css(font-weight, 700);
-                    .lib-css(font-family, @font-family-name__roboto);
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: #222222;
+                    font-weight: 700;
+                    font-family: "Roboto";
 
                     span {
-                        .lib-css(float, right);
+                        float: right;
                     }
                 }
             }
@@ -208,17 +207,17 @@
             .content {
                 margin-top: -6px;
                 p {
-                    .lib-css(font-size, 13px);
-                    .lib-css(line-height, 10px);
-                    .lib-css(color, #333333);
-                    .lib-css(font-weight, 400);
-                    .lib-css(font-family, @font-family-name__roboto);
-                    .lib-css(text-transform, capitalize);
+                    font-size: 13px;
+                    line-height: 10px;
+                    color: #333333;
+                    font-weight: 400;
+                    font-family: "Roboto";
+                    text-transform: capitalize;
                 }
 
                 p:last-child {
-                    .lib-css(text-transform, uppercase);
-                    .lib-css(line-height, 25px);
+                    text-transform: uppercase;
+                    line-height: 25px;
                 }
             }
 
@@ -229,66 +228,66 @@
             padding-top: 20px;
 
             .gift-1 {
-                .lib-css(float, left);
-                .lib-css(width, 45%);
-                .lib-css(text-align, center);
+                float: left;
+                width: 45%;
+                text-align: center;
 
                 span {
-                    .lib-css(font-size, 12px);
-                    .lib-css(line-height, 20px);
-                    .lib-css(color, #111111);
-                    .lib-css(font-weight, 400);
-                    .lib-css(font-family, @font-family-name__roboto);
+                    font-size: 12px;
+                    line-height: 20px;
+                    color: #111111;
+                    font-weight: 400;
+                    font-family: "Roboto";
                 }
             }
             .gift-2 {
-                .lib-css(float, right);
-                .lib-css(width, 45%);
-                .lib-css(text-align, center);
+                float: right;
+                width: 45%;
+                text-align: center;
 
                 span {
-                    .lib-css(font-size, 12px);
-                    .lib-css(line-height, 20px);
-                    .lib-css(color, #111111);
-                    .lib-css(font-weight, 400);
-                    .lib-css(font-family, @font-family-name__roboto);
+                    font-size: 12px;
+                    line-height: 20px;
+                    color: #111111;
+                    font-weight: 400;
+                    font-family: "Roboto";
                 }
             }
 
             .gift-3 {
-                .lib-css(float, left);
-                .lib-css(width, 100%);
-                .lib-css(position, relative);
+                float: left;
+                width: 100%;
+                position: relative;
                 .bg {
                     img {
-                        .lib-css(width, 100%);
+                        width: 100%;
                         max-height: 110px;
                     }
                 }
 
                 .content {
-                    .lib-css(width, 100%);
-                    .lib-css(position, absolute);
+                    width: 100%;
+                    position: absolute;
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
                     -ms-transform: translate(-50%, -50%);
-                    .lib-css(text-align, center);
+                    text-align: center;
 
                     p:first-child {
-                        .lib-css(font-size, 20px);
-                        .lib-css(line-height, 6px);
-                        .lib-css(color, #222);
+                        font-size: 20px;
+                        line-height: 6px;
+                        color: #222222;
                         font-weight: 500;
-                        .lib-css(font-family, @font-family-name__roboto);
+                        font-family: "Roboto";
                     }
 
                     p:last-child {
-                        .lib-css(font-size, 15px);
-                        .lib-css(line-height, 24px);
-                        .lib-css(color, #333333);
-                        .lib-css(font-weight, 400);
-                        .lib-css(font-family, @font-family-name__roboto);
+                        font-size: 15px;
+                        line-height: 24px;
+                        color: #333333;
+                        font-weight: 400;
+                        font-family: "Roboto";
                     }
                 }
             }
@@ -298,7 +297,7 @@
 
     .u-may-so-like {
         h3 {
-            .lib-css(display, flex);
+            display: flex;
             align-items: center;
             justify-content: center;
         }
@@ -315,55 +314,53 @@
         }
 
         .list {
-            .lib-css(width, 100%);
+            width: 100%;
 
             .item {
-                .lib-css(float, left);
-                .lib-css(width, 50%);
-                .lib-css(text-align, left);
+                float: left;
+                width: 50%;
+                text-align: left;
 
                 .more {
-                    .lib-css(text-transform, uppercase);
-                    .lib-css(font-size, 11px);
-                    .lib-css(letter-spacing, 1.2px);
-                    .lib-css(line-height, 24px);
-                    .lib-css(color, #333333);
-                    .lib-css(font-weight, 400);
-                    .lib-css(font-family, @font-family-name__roboto);
+                    text-transform: uppercase;
+                    font-size: 11px;
+                    letter-spacing: 1px;
+                    line-height: 24px;
+                    color: #333333;
+                    font-weight: 400;
+                    font-family: "Roboto";
                 }
     
                 p {
                     button {
                         max-width: none;
-                        .lib-css(width, auto);
+                        width: auto;
     
-                        .lib-css(font-size, 13px);
-                        .lib-css(line-height, 20px);
-                        .lib-css(color, #2d2d2f);
-                        .lib-css(font-weight, 700);
-                        .lib-css(font-family, @font-family-name__roboto);
+                        font-size: 13px;
+                        line-height: 20px;
+                        color: #2d2d2f;
+                        font-weight: 700;
+                        font-family: "Roboto";
                     }
                 }
                 h4 {
-                    .lib-css(letter-spacing, 0);
-                    .lib-css(font-size, 13px);
-                    .lib-css(line-height, 18px);
-                    .lib-css(color, #222);
-                    .lib-css(font-weight, 700);
-                    .lib-css(font-family, @font-family-name__roboto);
-                    padding-right: 13%;
+                    font-size: 13px;
+                    line-height: 18px;
+                    color: #222222;
+                    font-weight: 700;
+                    font-family: "Roboto";
+                    padding-right: 15%;
                 }
     
                 .price {
-                    .lib-css(letter-spacing, 2px);
-                    .lib-css(font-size, 16px);
-                    .lib-css(line-height, 18px);
-                    .lib-css(color, #666);
-                    .lib-css(font-weight, 400);
-                    .lib-css(font-family, @font-family-name__roboto);
+                    font-size: 16px;
+                    line-height: 18px;
+                    color: #666666;
+                    font-weight: 400;
+                    font-family: "Roboto";
                     // text-decoration: line-through;
                     span {
-                        .lib-css(color, red);
+                        color: red;
                         padding-left: 15px;
                     }
                 }
@@ -374,36 +371,36 @@
     .modal-body-content {
 
         .img {
-            .lib-css(float, left);
-            .lib-css(width, 100%);
-            .lib-css(text-align, center);
+            float: left;
+            width: 100%;
+            text-align: center;
         }
         .content {
-            .lib-css(float, left);
-            .lib-css(width, 100%);
-            .lib-css(text-align, center);
+            float: left;
+            width: 100%;
+            text-align: center;
 
             p {
                 button {
                     max-width: none;
-                    .lib-css(width, 100%);
+                    width: 100%;
                 }
             }
         }
     
 
         .title {
-            .lib-css(float, left);
-            .lib-css(width, 100%);
+            float: left;
+            width: 100%;
 
             h3 {
-                .lib-css(width, 100%);
+                width: 100%;
                 
-                .lib-css(color, red);
+                color: red;
             }
 
             h3 {
-                .lib-css(display, flex);
+                display: flex;
                 align-items: center;
                 justify-content: center;
             }
@@ -421,46 +418,46 @@
         }
 
         .related {
-            .lib-css(float, left);
-            .lib-css(width, 100%);
-            .lib-css(text-align, center);
+            float: left;
+            width: 100%;
+            text-align: center;
 
             padding: 15px 0;
-            .lib-css(border-bottom, 1px solid #ddd);
+            border-bottom: 1px solid #ddd;
 
             p {
                 button {
                     max-width: none;
                     width: auto;
 
-                    .lib-css(font-size, 13px);
-                    .lib-css(line-height, 20px);
-                    .lib-css(color, #2d2d2f);
-                    .lib-css(font-weight, 700);
-                    .lib-css(font-family, @font-family-name__roboto);
+                    font-size: 13px;
+                    line-height: 20px;
+                    color: #2d2d2f;
+                    font-weight: 700;
+                    font-family: "Roboto";
                 }
             }
             h4 {
-                .lib-css(font-size, 13px);
-                .lib-css(line-height, 18px);
-                .lib-css(color, #222);
-                .lib-css(font-weight, 700);
-                .lib-css(font-family, @font-family-name__roboto);
+                font-size: 13px;
+                line-height: 18px;
+                color: #222222;
+                font-weight: 700;
+                font-family: "Roboto";
             }
 
             .price {
-                .lib-css(font-size, 20px);
-                .lib-css(line-height, 18px);
-                .lib-css(color, #666);
-                .lib-css(font-weight, 400);
-                .lib-css(font-family, @font-family-name__roboto);
+                font-size: 20px;
+                line-height: 18px;
+                color: #666666;
+                font-weight: 400;
+                font-family: "Roboto";
             }
         } 
 
     }
 
     .action-close {
-        .lib-css(width, 60px);
+        width: 60px;
     }
    
 }
@@ -472,106 +469,90 @@
                 margin: 0 ;
 
                 .readmore {
-                    padding: 20px 0;
+                    padding: 26px 0;
+
                     &__img,
                     &__content {
-                        .lib-css(float, left);
-                        .lib-css(width, 50%);
+                        float: left;
+                        width: 50%;
                     }
             
                     &__content {
-                        .lib-css(text-align, center);
+                        text-align: center;
                         p {
                             padding: 0 30px;
                         }
-
-                        a{
-                            .lib-css(font-size, 13px);
-                            .lib-css(line-height, 20px);
-                            .lib-css(color, #333333);
-                            .lib-css(font-weight, 400);
-                            .lib-css(font-family, @font-family-name__roboto);
-                            .lib-css(text-decoration, underline);
-                            .lib-css(text-transform, capitalize);
-                        }
                     }
                 }
-
-                
-
-                // .readmore:nth-child(2) {
-                //     padding: 100px 0 24px 0;
-                // }
             }
-
         }
     }
 
     .page-layout-1column {
         .product.media {
-            .lib-css(width, 66%);
+            width: 66%;
         }
 
         .product-info-main {
-            .lib-css(width, 33%);
+            width: 33%;
         }
     }
 
     .modal-popup .modal-inner-wrap {
-        .lib-css(width, 80%);
+        width: 80%;
     }
 
     .modal-body-content  {
         .img {
-            .lib-css(width, 50%);
+            width: 50%;
 
         }
         .content {
-            .lib-css(width, 50%);
+            width: 50%;
         }
 
         .related {
-            .lib-css(width, 30%);
+            width: 30%;
             padding: 0 3.33% 0 0;
-            .lib-css(border-bottom, none);
+            border-bottom: none;
         }
     }
 
     .u-may-so-like {
         .list {
             .item {
-                .lib-css(width, 25%);
+                width: 25%;
                 padding-right: 0;
             } 
         }
     }
 
     .product-details-2{
-        .lib-css(border, 1px solid #ddd);
+        border: 1px solid #ddd;
         .title {
             margin: auto !important;
 
             h3 {
-                .lib-css(font-size, 18px);
-                .lib-css(color, #222);
-                .lib-css(font-weight, 400);
-                .lib-css(font-family, @font-family-name__roboto);
-                .lib-css(letter-spacing, -0.3px);
+                font-size: 18px;
+                color: #222222;
+                font-weight: 400;
+                font-family: "Roboto";
+                letter-spacing: -0.3px;
             }
 
             .switch {
-                .lib-css(text-transform, uppercase);
-                .lib-css(font-size, 13px);
-                .lib-css(line-height, 20px);
-                .lib-css(color, #222);
-                .lib-css(font-weight, 700);
-                .lib-css(font-family, @font-family-name__roboto);
+                text-transform: uppercase;
+                font-size: 13px;
+                line-height: 20px;
+                color: #222222;
+                font-weight: 700;
+                font-family: "Roboto";
 
             }
         }
 
         .first-content {
-            .lib-css(border-bottom, 1px solid #ddd);
+            border-bottom: 1px solid #ddd;
             padding-bottom: 26px;
             margin-top: -11px;
         }
@@ -579,23 +560,23 @@
         .product-blog {
             .readmore {
                 
-                .lib-css(border-bottom, 1px solid #ddd);
+                border-bottom: 1px solid #ddd;
 
                 &__content {
                     h4 {
-                        .lib-css(font-size, 20px);
-                        .lib-css(line-height, 36px);
-                        .lib-css(color, #222);
-                        .lib-css(font-weight, 400);
-                        .lib-css(font-family, @font-family-name__lora);
-                        .lib-css(text-transform, capitalize);
+                        font-size: 20px;
+                        line-height: 36px;
+                        color: #222222;
+                        font-weight: 400;
+                        font-family: "Lora";
+                        text-transform: capitalize;
                     }
                     p {
-                        .lib-css(font-size, 13px);
-                        .lib-css(line-height, 20px);
-                        .lib-css(color, #333333);
-                        .lib-css(font-weight, 400);
-                        .lib-css(font-family, @font-family-name__roboto);
+                        font-size: 13px;
+                        line-height: 20px;
+                        color: #333333;
+                        font-weight: 400;
+                        font-family: "Roboto";
                     }
                 }
             }
@@ -609,8 +590,8 @@
             > .switch {
                 height: 40px;
                 font-weight: 600;
-                .lib-css(letter-spacing, -0.5px);
-                .lib-css(line-height, 45px);
+                letter-spacing: -0.5px;
+                line-height: 45px;
                 padding: 3px 23px 5px 23px;
             }
         }
@@ -628,45 +609,44 @@
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
     .product-details {
-        .lib-css(width, 66%);
+        width: 66%;
     }
 
     .modal-popup .modal-inner-wrap {
-        .lib-css(width, 55%);
+        width: 55%;
     }
 
 }
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__xl) {
     .product-details{
-        .lib-css(display, none);
+        display: none;
     }
 
     .product-details-2 {
-        .lib-css(display, block);
-        .lib-css(float, left);
+        display: block;
+        float: left;
         width: 64.25% !important;
-        margin-top: 1px;
+        margin-top: 0;
         
     }
 
     .modal-popup .modal-inner-wrap {
-        .lib-css(width, 45%);
+        width: 45%;
     }
 
     .product-info-main {
-        .lib-css(border, 1px solid #ddd);
+        border: 1px solid #ddd;
         padding-left: 8px;
         margin-top: -3px;
-        padding-bottom: 4px;
 
         .page-title-wrapper {
             .page-title {
-                .lib-css(text-transform, capitalize);
+                text-transform: capitalize;
                 padding: 23px 50px 10px 19px;
                 margin-top: 2px;
-                .lib-css(line-height, 25px);
-                .lib-css(letter-spacing, -0.5px);
+                line-height: 25px;
+                letter-spacing: -0.5px;
             }
         }
 
@@ -681,7 +661,7 @@
 
             .product-options-wrapper {
                 .size {
-                    .lib-css(display, none);
+                    display: none;
                 }
                 
             }
@@ -692,7 +672,7 @@
                     p {
                         button {
                             max-width: none;
-                            .lib-css(width, 222PX);
+                            width: 222px;
                         }
                     }
                 }
@@ -703,7 +683,7 @@
         .review-product {
             margin: 0 20px;
             padding: 3px 20px 0 0;
-            .lib-css(letter-spacing, 0.075px);
+            letter-spacing: 0.075px;
         }
 
         .product-price-detail {
@@ -758,17 +738,16 @@
     .u-may-so-like {
         .title {
             h3 {
-                .lib-css(font-size, 24px);
-                .lib-css(color, #222);
-                .lib-css(font-weight, 400);
-                .lib-css(font-family, @font-family-name__lora);
-                .lib-css(letter-spacing, 1.5px);
+                font-size: 24px;
+                color: #222222;
+                font-weight: 400;
+                font-family: "Lora";
+                letter-spacing: 1.5px;
             }
         }
 
         .list {
             .item {
-
                 p {
                     margin-bottom: 0;
                 }
@@ -779,87 +758,6 @@
 
                 .price {
                     padding: 15px 0 13px 0;
-                }
-            }
-
-            .item:first-child {
-                .more {
-                    margin-top: -3px;
-                }
-
-            }
-
-            .item:nth-child(2) {
-                margin-top: -4px;
-                // padding: 0px 0px 0px 12px;
-            }
-
-            .item:nth-child(3) {
-                margin-top: -4px;
-                // padding: 0 0px 0 10px;
-            }
-
-            .item:nth-child(3) {
-                margin-top: -4px;
-                // padding: 0 0px 0 10px;
-            }
-        }
-
-        
-        
-    }
-
-    .product-blog {
-        .container {
-
-            .row:first-child
-            {
-                .readmore {
-                    padding: 21px 0 24px 0;
-
-                    &__content {
-                        h4 {
-                            padding: 13px 0px 0 21px;
-                        }
-
-                        p {
-                            margin: -15px -8px 0 0;
-                        }
-                    }
-                }
-            }
-
-            .row:nth-child(2)
-            {
-                .readmore {
-                    padding: 31px 0 26px 0;
-
-                    &__content {
-                        h4 {
-                            padding: 13px 0 0 0;
-                        }
-
-                        p {
-                            margin: -15px 0 0 7px;
-                        }
-                    }
-                }
-            }
-
-            .row:nth-child(3)
-            {
-                .readmore {
-                    padding: 29px 0 22px 0;
-                    // padding: 31px 0 26px 0;
-                    &__content {
-                        h4 {
-                            padding: 13px 0 0 0;
-                        }
-
-                        p {
-                            margin: -14px 0 0 6px;
-                        }
-                    }
                 }
             }
         }
