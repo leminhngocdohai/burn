@@ -1,27 +1,21 @@
 /*Home Banner*/
 & when (@media-common =true){
-    .row {
+    .row-home {
         .lib-css(display, flex);
         .lib-css(width, 100%);
-
-        .col {
+        .col-home {
             .lib-css(position, relative);
             .lib-css(width, 100%);
             .lib-css(overflow, hidden);
-
             >p{
-
                 .lib-css(display, -webkit-flex);
                 .lib-css(justify-content,center);
-
             }
-
             & img{
                 .lib-css(width, 100%);
                 .lib-css(min-width, 700px);
                 .lib-css(min-height, 320px);
             }
-
             .home-banner-content{
                 .lib-css(transform,translate(-50%, -50%));
                 .lib-css(width, 100%);
@@ -84,10 +78,11 @@
     }
 
 }
+
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__xl) {
-    .row {
+    .row-home {
         /*.lib-css(margin, 0);*/
-        .col {
+        .col-home {
             /*.lib-css(margin, 10px);*/
             .home-banner-content{
                 .col-content {
@@ -112,10 +107,11 @@
         }
     }
 }
+/*-------------------- responsive --------------------------*/
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
-    .row {
+    .row-home {
         /*.lib-css(margin, 0);*/
-        .col {
+        .col-home {
             /*.lib-css(margin, 10px);*/
             .home-banner-content{
                 .home-banner-content-detail{
@@ -129,8 +125,8 @@
 }
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m){
-    .row {
-        .col {
+    .row-home {
+        .col-home {
             .home-banner-content{
                 .lib-css(position, absolute);
                 .lib-css(top, 49%);
@@ -180,9 +176,9 @@
         .lib-css(padding-left,10px);
         .lib-css(padding-right,10px);
     }
-    .row {
+    .row-home {
         /*.lib-css(margin, 0);*/
-        .col {
+        .col-home {
             /*.lib-css(margin, 10px);*/
             .home-banner-content{
                 .lib-css(position, absolute);
@@ -229,8 +225,8 @@
     }
 }
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s){
-    .row {
-        .col {
+    .row-home {
+        .col-home {
             .home-banner-content{
                 .home-banner-content-detail{
                     h2{
@@ -244,9 +240,9 @@
 }
 
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xs){
-    .row {
+    .row-home {
         /*.lib-css(margin, 0);*/
-        .col {
+        .col-home {
             /*.lib-css(margin, 10px);*/
             .home-banner-content{
                 .col-content {
@@ -285,9 +281,9 @@
     }
 }
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__380){
-    .row {
+    .row-home {
         /*.lib-css(margin, 0);*/
-        .col {
+        .col-home {
             /*.lib-css(margin, 10px);*/
             .home-banner-content{
                 .col-content {
@@ -325,8 +321,8 @@
         .lib-css(display, flex);
         .lib-css(width, 100%);
 
-        .row {
-            .col {
+        .row-home {
+            .col-home {
                 img{
                     .lib-css(min-width, 100%);
                     .lib-css(min-height, 297px);
@@ -377,8 +373,8 @@
     .home-main-content{
         margin-bottom: 4px;
 
-        .row {
-            .col {
+        .row-home {
+            .col-home {
                 .col-content {
                     h3 {
                         .lib-css(font-size, @size-42);
@@ -392,8 +388,8 @@
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l){
     .home-main-content{
-        .row {
-            .col {
+        .row-home {
+            .col-home {
                 .col-content {
                     h3 {
                         .lib-css(font-size, @size-42);
@@ -410,7 +406,7 @@
         display: none;
     }
     .home-main-content{
-        .row {
+        .row-home {
             .lib-css(margin-top,12px);
 
             &:first-child{
@@ -421,7 +417,7 @@
                 .lib-css(margin-left, 10px);
             }
 
-            .col {
+            .col-home {
                 .col-content {
                     .lib-css(top, 47.4%);
                     .lib-css(left, 50%);
@@ -446,14 +442,14 @@
         display: none;
     }
     .home-main-content{
-        .row {
+        .row-home {
             &:first-child{
                 .lib-css(margin-right, 5px);
             }
             &:last-child{
                 .lib-css(margin-left, 5px);
             }
-            .col {
+            .col-home {
                 .col-content {
                     .lib-css(top, 48.2%);
                     .lib-css(left, 50%);
@@ -481,8 +477,8 @@
 }
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m){
     .home-main-content{
-        .row {
-            .col {
+        .row-home {
+            .col-home {
                 .col-content {
                     h3 {
                         .lib-css(font-size, 24px);
@@ -501,7 +497,7 @@
      }
     .home-main-content{
         flex-direction: column;
-        .row {
+        .row-home {
             &:first-child{
                 .lib-css(margin-right, 0px);
             }
@@ -510,7 +506,7 @@
                 .lib-css(margin-left, 0px);
             }
 
-            .col {
+            .col-home {
                 .col-content {
                     .lib-css(top, 44%);
 
@@ -643,7 +639,7 @@
         display: flex;
         width: 100%;
         margin-bottom: 10px;
-        .row{
+        .row-home{
             background-color: #f1f1f1;
             .col{
                 img{
@@ -713,7 +709,7 @@
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__xl){
     .home-three-title{
-        .row {
+        .row-home {
             &:nth-child(2){
                 margin: 0px 20px 0px 20px;
             }
@@ -724,7 +720,7 @@
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m){
     .home-three-title{
         margin-top: 18px;
-        .row {
+        .row-home {
             &:nth-child(2){
                 margin: 0px 10px 0px 10px;
             }
@@ -752,7 +748,7 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        .row{
+        .row-home{
             margin-bottom: 10px;
             .col{
                 padding: 0px;
@@ -763,7 +759,7 @@
                 }
 
                 .home-three-content{
-                    padding-top: 13px;
+                    padding-top: 14px;
                     padding-bottom: 15px;
                     h5{
                         margin: 0 0px 7px 0px;
@@ -781,7 +777,7 @@
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xs){
     .home-three-title{
         margin-top: 10px;
-        .row{
+        .row-home{
             margin-bottom: 12px;
         }
     }
@@ -791,7 +787,7 @@
 
 & when (@media-common =true){
     .home-main-content.content-3{
-        .row{
+        .row-home{
             .col{
                 .col-content{
                     position: absolute;
@@ -832,7 +828,7 @@
 }
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m){
     .home-main-content.content-3{
-        .row {
+        .row-home {
             &:first-child{
                 .lib-css(margin-right, 10px);
             }
@@ -841,7 +837,7 @@
                 .lib-css(margin-left, 10px);
             }
 
-            .col {
+            .col-home {
                 .col-content {
                     h3 {
                         font-size: 52px;
@@ -853,7 +849,7 @@
 }
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m){
     .home-main-content.content-3{
-        .row {
+        .row-home {
             &:first-child{
                 .lib-css(margin-right, 10px);
             }
@@ -862,7 +858,7 @@
                 .lib-css(margin-left, 10px);
             }
 
-            .col {
+            .col-home {
                 .col-content {
                     h3 {
                         font-size: 40px;
@@ -874,7 +870,7 @@
 }
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__s){
     .home-main-content.content-3{
-        .row{
+        .row-home{
             &:first-child{
                 display: none;
             }
@@ -883,9 +879,9 @@
 }
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xs){
     .home-main-content.content-3{
-        margin-top: -8px;
+        margin-top: -11px;
         flex-direction: column;
-        .row{
+        .row-home{
             &:last-child{
                 .lib-css(margin-left, 0px);
             }

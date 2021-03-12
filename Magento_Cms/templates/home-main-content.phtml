@@ -1,8 +1,8 @@
 <!--Home main content-->
 <div class="home-main-content ">
 <?php for($i=1;$i<3;$i++): ?>
-    <div class="row">
-        <div class="col">
+    <div class="row row-home">
+        <div class="col col-home">
             <div class="desktop"><?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('home_content_'.$i.'')->toHtml(); ?></div>
             <div class="mobile"><?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('home_content_'.$i.'_mobile')->toHtml(); ?></div>
             <div class="col-content icon-next">
@@ -50,8 +50,8 @@
 <!--Home three-->
 <div class="home-three-title">
     <?php for($i=1;$i<4;$i++): ?>
-    <div class="row">
-        <div class="col">
+    <div class="row row-home">
+        <div class="col col-home">
             <div class="desktop">
                 <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('home_three_'.$i.'')->toHtml(); ?>
             </div>
@@ -73,8 +73,8 @@
 <!--Content 3-->
 <div class="home-main-content content-3">
     <?php for($i=3;$i<5;$i++): ?>
-        <div class="row">
-            <div class="col">
+        <div class="row row-home">
+            <div class="col col-home">
                 <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('home_content_'.$i.'')->toHtml(); ?>
                 <div class="col-content icon-next">
                     <?php echo $block->getLayout()->createBlock('Magento\Cms\Block\Block')->setBlockId('home_content_'.$i.'_detail')->toHtml(); ?>
