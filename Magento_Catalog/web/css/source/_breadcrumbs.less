@@ -6,22 +6,18 @@
             .lib-css(font-size, @font-size-12);
             .lib-css(line-height, @line-height-24);
         }
-
         .items > li {
             vertical-align: baseline;
         }
-
         strong {
             .lib-css(color, @color-777);
         }
-
         .item:not(:last-child):after {
             .lib-css(content, '/');
             .lib-css(color, @color-777);
             font-size: @font-size-18;
         }
-    }
-    
+    }   
 }
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
@@ -39,7 +35,5 @@
             .lib-css(margin-left, @size-1);
             .lib-css(margin-right, @size-1);
         }
-
-    }
-    
+    }   
 }

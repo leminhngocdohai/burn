@@ -9,31 +9,22 @@
                 .lib-css(display, flex);
                 .lib-css(justify-content, center);
             }  
-
             img {
                  .lib-css(min-height, @size-153);
-                 .lib-css(min-width, @size-768);
-               
-            }
-             
+                 .lib-css(min-width, @size-768);               
+            }             
         }
-
         &_text {
             .lib-css(position, absolute);          
             h1 {
                 .lib-css(font-family, @font-family__sunvalley);
                 .lib-css(color, @color-white);                                          
             }
-
             h4 {             
-                .lib-css(color, @color-white);  
-                
+                .lib-css(color, @color-white);                  
             }
-
         }
-
-    }
-    
+    }    
 }
 
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__l) {
@@ -44,18 +35,15 @@
                 .lib-css(font-size, @size-72); 
                 word-spacing: 2.5px;
             }
-
             h4 {
                 .lib-css(max-width, 60%);
                 margin-top: 23px;
                 word-spacing: 0.7px;
             }
-
         }
-
     }
-
 }
+
 .media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
     .category_banner {
         &_text {           
@@ -64,16 +52,12 @@
             h1 {
                 .lib-css(font-size, @size-62); 
             }
-
             h4 {
                 .lib-css(max-width, 70%);
                 .lib-css(line-height, @h4-line-height);
             }
-
         }
-
     }
-
 }
 
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
@@ -87,7 +71,6 @@
             h1 {
                 .lib-css(font-size, @size-40);                
             }
-
             h4 {
                 .lib-css(max-width, 100%);
                 .lib-css(line-height, @line-height-20);
@@ -95,11 +78,8 @@
                 .lib-css(padding, 0 5px);
                 .lib-css(letter-spacing, -0.5px);
             }
-
         }
-
     }
-
  }
 
 .media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__xs) {
@@ -107,10 +87,7 @@
         &_text {      
             h1 {
                 .lib-css(font-size, @size-30);                 
-            }
-           
+            }           
         }
-
     }
-
  }
