@@ -9,5 +9,13 @@
     <head>
           <css src="../web/css/line-awesome/line-awesome.min.css"/>
           <css src="https://use.fontawesome.com/releases/v5.10.2/css/all.css" src_type="url"/>
+
+
+          <!-- Remove local resources -->
+          <remove src="css/styles-m.css" />
+          <!-- Remove external resources -->
+          <remove src="http://fonts.googleapis.com/css?family=Montserrat" />
+
+
     </head>
 </page>

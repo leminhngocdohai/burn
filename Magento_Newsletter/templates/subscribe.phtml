@@ -6,7 +6,16 @@
 
 /** @var \Magento\Newsletter\Block\Subscribe $block */
 ?>
-<div class="footer-middle">
+<div class="footer-middle"
+     id="accordion"
+     data-mage-init='{
+        "accordion":{
+            "collapsible": true,
+            "openedState": "active",
+            "multipleCollapsible": true
+        }
+     }'
+>
     <div class="item cate">
         <?php echo
         $block->getLayout()
@@ -37,35 +46,13 @@
                     ->setBlockId('footer-middle-newsletter')
                     ->toHtml(); ?>
             </div>
-            <form class="form subscribe"
-                  novalidate
-                  action="<?= $block->escapeUrl($block->getFormActionUrl()) ?>"
-                  method="post"
-                  data-mage-init='{"validation": {"errorClass": "mage-error"}}'
-                  id="newsletter-validate-detail">
-                <div class="field newsletter">
-                    <div class="control">
-                        <label for="newsletter">
-                            <span class="label">
-                                <?= $block->escapeHtml(__('Sign Up for Our Newsletter:')) ?>
-                            </span>
-                            <input name="email" type="email" id="newsletter"
-                                   placeholder="<?= $block->escapeHtmlAttr(__('Enter your email address')) ?>"
-                                   data-mage-init='{"mage/trim-input":{}}'
-                                   data-validate="{required:true, 'validate-email':true}"
-                            />
-                        </label>
-                    </div>
-                </div>
-                <div class="actions">
-                    <button class="action subscribe primary"
-                            title="<?= $block->escapeHtmlAttr(__('Subscribe')) ?>"
-                            type="submit"
-                            aria-label="Subscribe">
-                        <span><?= $block->escapeHtml(__('Subscribe')) ?></span>
-                    </button>
-                </div>
-            </form>
+            <div class="form">
+                <form action="">
+                    <input type="text" placeholder="Enter your email address"/>
+                    <button><i class="fas fa-chevron-right"></i></button>
+                </form>
+            </div>
+
             <div class="social">
                 <?php echo
                 $block->getLayout()
